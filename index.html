@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drehbuch Data</title>
+    <link href="https://cdn.jsdelivr.net/npm/beercss@3.4.2/dist/cdn/beer.min.css" rel="stylesheet">
+
+    <style>
+        .chart {
+            /* Invert */
+            filter: invert(1);
+        }
+    </style>
+</head>
+
+<body class="dark">
+    <main class="responsive">
+        <h1>Drehbuch Data</h1>
+        <table></table>
+        <h2>Words (%)</h2>
+        <div id="wordsPercent" class="chart"></div>
+    </main>
+
+    <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@3.4.2/dist/cdn/beer.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js" charset="utf-8"></script>
+    <script>
+        // Fetch drehbuch.txt
+        let data = {}
+        const blacklist = ["OFFTEXT", "ALLE", "LIED"]
+        fetch('2023.txt')
+            .then(response => response.text())
+            .then(text => {
+                // Split text into lines
+                const lines = text.split('\n');
+                // For each line, create a new <p> element
+                lines.forEach(line => {
+                    let [actor, text] = line.split(':');
+                    if (!text) {
+                        return;
+                    }
+                    // Remove (Text) from actor
+                    actor = actor.replace(/\(.*\)/, '');
+                    // Remove leading and trailing spaces
+                    actor = actor.trim();
+                    text = text.trim();
+
+                    // Check if actor is all caps
+                    if (actor != actor.toUpperCase()) return
+
+                    if (actor.includes("SZENE")) return
+
+                    if (blacklist.includes(actor)) return
+
+                    // Check if actor is already in data
+                    if (!data[actor]) {
+                        data[actor] = {
+                            occurrences: 0,
+                            words: 0,
+                            characters: 0,
+                        }
+                    }
+
+                    // Increase
+                    data[actor].occurrences++;
+                    data[actor].words += text.split(' ').length;
+                    data[actor].characters += text.length;
+                });
+
+                // Get % of words and characters
+                const total_words = Object.values(data).reduce((acc, cur) => acc + cur.words, 0);
+                const total_characters = Object.values(data).reduce((acc, cur) => acc + cur.characters, 0);
+
+                for (const actor in data) {
+                    data[actor].words_percent = (data[actor].words / total_words * 100).toFixed(2);
+                    data[actor].characters_percent = (data[actor].characters / total_characters * 100).toFixed(2);
+                }
+
+                // To Array
+                let dataArray = []
+                for (const actor in data) {
+                    dataArray.push([
+                        actor,
+                        data[actor].occurrences,
+                        data[actor].words,
+                        data[actor].characters,
+                        data[actor].words_percent,
+                        data[actor].characters_percent,
+                    ])
+                }
+
+                console.log(dataArray)
+                // Sort
+                dataArray.sort((a, b) => {
+                    return b[2] - a[2]
+                })
+
+                // Create table
+                const table = document.querySelector('table');
+                table.classList.add('border');
+                table.innerHTML = `
+                    <thead>
+                        <tr>
+                            <th>Actor</th>
+                            <th>Occurrences</th>
+                            <th>Words</th>
+                            <th>Words (%)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        ${dataArray.map((actor) => {
+                    return `
+                                <tr>
+                                    <td>${actor[0]}</td>
+                                    <td>${actor[1]}</td>
+                                    <td>${actor[2]}</td>
+                                    <td>${actor[4]}%</td>
+                                </tr>
+                            `
+                }).join('')}
+                    </tbody>
+                `;
+
+                // Chart
+                var wordChartData = [{
+                    type: 'pie',
+                    values: dataArray.map((actor) => actor[2]),
+                    labels: dataArray.map((actor) => actor[0]),
+                }];
+
+                Plotly.newPlot('wordsPercent', wordChartData);
+
+            });
+    </script>
+</body>
+
+</html>

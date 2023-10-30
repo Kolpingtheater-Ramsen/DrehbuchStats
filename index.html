@@ -75,6 +75,7 @@
         const inputText = document.querySelector('#inputText');
 
         inputText.addEventListener('input', () => {
+            data = {}
             const text = inputText.value;
             // Split text into lines
             const lines = text.split('\n');

@@ -106,7 +106,7 @@
       })
 
       let data = {}
-      const blacklist = ['OFFTEXT', 'ALLE', 'LIED']
+      const blacklist = ['OFFTEXT', 'ALLE', 'LIED', '[LIED']
       const inputText = document.querySelector('#inputText')
 
       inputText.addEventListener('input', () => {
@@ -132,6 +132,8 @@
           if (actor.includes('SZENE')) return
 
           if (blacklist.includes(actor)) return
+
+          if (!actor) return
 
           // Check if actor is already in data
           if (!data[actor]) {

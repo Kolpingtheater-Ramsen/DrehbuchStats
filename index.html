@@ -1,149 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Drehbuch Data</title>
-    <link href="https://cdn.jsdelivr.net/npm/beercss@3.4.2/dist/cdn/beer.min.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/beercss@3.4.2/dist/cdn/beer.min.css"
+      rel="stylesheet"
+    />
 
     <style>
-        .chart {
-            /* Invert */
-            filter: invert(1);
-        }
+      .chart {
+        /* Invert */
+        filter: invert(1);
+      }
     </style>
-</head>
+  </head>
 
-<body class="dark">
+  <body class="dark">
     <main class="responsive">
-        <h1>Drehbuch Data</h1>
-        <h2>Input</h2>
-        <nav class="no-space">
-            <button class="border left-round max">
-                <span>2018</span>
-            </button>
-            <button class="border no-round max">
-                <span>2019</span>
-            </button>
-            <button class="border no-round max">
-                <span>2020</span>
-            </button>
-            <button class="border no-round max">
-                <span>2021</span>
-            </button>
-            <button class="border no-round max">
-                <span>2022</span>
-            </button>
-            <button class="border no-round max">
-                <span>2023</span>
-            </button>
-            <button class="border right-round max">
-                <span>2024</span>
-            </button>
-        </nav>
-        <div class="space"></div>
-        <textarea name="inputText" id="inputText" rows="5" class="responsive"></textarea>
-        <h2>Tabular Data</h2>
-        <table></table>
-        <h2>Words (%)</h2>
-        <div id="wordsPercent" class="chart"></div>
+      <h1>Drehbuch Data</h1>
+      <h2>Input</h2>
+      <nav class="no-space">
+        <button class="border left-round max">
+          <span>2018</span>
+        </button>
+        <button class="border no-round max">
+          <span>2019</span>
+        </button>
+        <button class="border no-round max">
+          <span>2020</span>
+        </button>
+        <button class="border no-round max">
+          <span>2021</span>
+        </button>
+        <button class="border no-round max">
+          <span>2022</span>
+        </button>
+        <button class="border no-round max">
+          <span>2023</span>
+        </button>
+        <button class="border no-round max">
+          <span>2024</span>
+        </button>
+        <button class="border no-round max">
+          <span>2024 (W)</span>
+        </button>
+        <button class="border no-round max"><span>2025</span></button>
+        <button class="border right-round max">
+          <span>Custom</span>
+        </button>
+      </nav>
+      <div class="space"></div>
+      <textarea
+        name="inputText"
+        id="inputText"
+        rows="5"
+        class="responsive"
+        style="display: none"
+      ></textarea>
+      <h2>Tabular Data</h2>
+      <table></table>
+      <h2>Words (%)</h2>
+      <div id="wordsPercent" class="chart"></div>
     </main>
 
-    <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@3.4.2/dist/cdn/beer.min.js"></script>
-    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js" charset="utf-8"></script>
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/beercss@3.4.2/dist/cdn/beer.min.js"
+    ></script>
+    <script
+      src="https://cdn.plot.ly/plotly-2.27.0.min.js"
+      charset="utf-8"
+    ></script>
     <script>
-        if (localStorage.getItem('inputText')) {
-            document.querySelector('#inputText').value = localStorage.getItem('inputText');
-            document.querySelector('#inputText').dispatchEvent(new Event('input'));
+      if (localStorage.getItem('inputText')) {
+        document.querySelector('#inputText').value =
+          localStorage.getItem('inputText')
+        document.querySelector('#inputText').dispatchEvent(new Event('input'))
+      }
+
+      document.querySelectorAll('nav button').forEach((button) => {
+        button.addEventListener('click', () => {
+          const name = button.querySelector('span').innerText
+
+          if (name.includes('Custom')) {
+            localStorage.removeItem('inputText')
+            document.querySelector('#inputText').value = ''
+            document
+              .querySelector('#inputText')
+              .dispatchEvent(new Event('input'))
+            inputText.style.display = 'block'
+            return
+          }
+
+          inputText.style.display = 'none'
+
+          fetch(`./data/${name}.txt`)
+            .then((response) => response.text())
+            .then((text) => {
+              document.querySelector('#inputText').value = text
+              document
+                .querySelector('#inputText')
+                .dispatchEvent(new Event('input'))
+              document.querySelector('#inputText').value = ''
+            })
+        })
+      })
+
+      let data = {}
+      const blacklist = ['OFFTEXT', 'ALLE', 'LIED']
+      const inputText = document.querySelector('#inputText')
+
+      inputText.addEventListener('input', () => {
+        data = {}
+        const text = inputText.value
+        // Split text into lines
+        const lines = text.split('\n')
+        // For each line, create a new <p> element
+        lines.forEach((line) => {
+          let [actor, text] = line.split(':')
+          if (!text) {
+            return
+          }
+          // Remove (Text) from actor
+          actor = actor.replace(/\(.*\)/, '')
+          // Remove leading and trailing spaces
+          actor = actor.trim()
+          text = text.trim()
+
+          // Check if actor is all caps
+          if (actor != actor.toUpperCase()) return
+
+          if (actor.includes('SZENE')) return
+
+          if (blacklist.includes(actor)) return
+
+          // Check if actor is already in data
+          if (!data[actor]) {
+            data[actor] = {
+              occurrences: 0,
+              words: 0,
+              characters: 0,
+            }
+          }
+
+          // Increase
+          data[actor].occurrences++
+          data[actor].words += text.split(' ').length
+          data[actor].characters += text.length
+        })
+
+        // Get % of words and characters
+        const total_words = Object.values(data).reduce(
+          (acc, cur) => acc + cur.words,
+          0
+        )
+        const total_characters = Object.values(data).reduce(
+          (acc, cur) => acc + cur.characters,
+          0
+        )
+
+        for (const actor in data) {
+          data[actor].words_percent = (
+            (data[actor].words / total_words) *
+            100
+          ).toFixed(2)
+          data[actor].characters_percent = (
+            (data[actor].characters / total_characters) *
+            100
+          ).toFixed(2)
         }
 
-        document.querySelectorAll('nav button').forEach((button) => {
-            button.addEventListener('click', () => {
-                const name = button.querySelector('span').innerText;
-                fetch(`./data/${name}.txt`)
-                    .then(response => response.text())
-                    .then(text => {
-                        document.querySelector('#inputText').value = text;
-                        document.querySelector('#inputText').dispatchEvent(new Event('input'));
-                    });
-            });
-        });
+        // To Array
+        let dataArray = []
+        for (const actor in data) {
+          dataArray.push([
+            actor,
+            data[actor].occurrences,
+            data[actor].words,
+            data[actor].characters,
+            data[actor].words_percent,
+            data[actor].characters_percent,
+          ])
+        }
 
-        let data = {}
-        const blacklist = ["OFFTEXT", "ALLE", "LIED"]
-        const inputText = document.querySelector('#inputText');
+        // Sort
+        dataArray.sort((a, b) => {
+          return b[2] - a[2]
+        })
 
-        inputText.addEventListener('input', () => {
-            data = {}
-            const text = inputText.value;
-            // Split text into lines
-            const lines = text.split('\n');
-            // For each line, create a new <p> element
-            lines.forEach(line => {
-                let [actor, text] = line.split(':');
-                if (!text) {
-                    return;
-                }
-                // Remove (Text) from actor
-                actor = actor.replace(/\(.*\)/, '');
-                // Remove leading and trailing spaces
-                actor = actor.trim();
-                text = text.trim();
-
-                // Check if actor is all caps
-                if (actor != actor.toUpperCase()) return
-
-                if (actor.includes("SZENE")) return
-
-                if (blacklist.includes(actor)) return
-
-                // Check if actor is already in data
-                if (!data[actor]) {
-                    data[actor] = {
-                        occurrences: 0,
-                        words: 0,
-                        characters: 0,
-                    }
-                }
-
-                // Increase
-                data[actor].occurrences++;
-                data[actor].words += text.split(' ').length;
-                data[actor].characters += text.length;
-            });
-
-            // Get % of words and characters
-            const total_words = Object.values(data).reduce((acc, cur) => acc + cur.words, 0);
-            const total_characters = Object.values(data).reduce((acc, cur) => acc + cur.characters, 0);
-
-            for (const actor in data) {
-                data[actor].words_percent = (data[actor].words / total_words * 100).toFixed(2);
-                data[actor].characters_percent = (data[actor].characters / total_characters * 100).toFixed(2);
-            }
-
-            // To Array
-            let dataArray = []
-            for (const actor in data) {
-                dataArray.push([
-                    actor,
-                    data[actor].occurrences,
-                    data[actor].words,
-                    data[actor].characters,
-                    data[actor].words_percent,
-                    data[actor].characters_percent,
-                ])
-            }
-
-            // Sort
-            dataArray.sort((a, b) => {
-                return b[2] - a[2]
-            })
-
-            // Create table
-            const table = document.querySelector('table');
-            table.classList.add('border');
-            table.innerHTML = `
+        // Create table
+        const table = document.querySelector('table')
+        table.classList.add('border')
+        table.innerHTML = `
                     <thead>
                         <tr>
                             <th>Actor</th>
@@ -153,8 +203,9 @@
                         </tr>
                     </thead>
                     <tbody>
-                        ${dataArray.map((actor) => {
-                return `
+                        ${dataArray
+                          .map((actor) => {
+                            return `
                                 <tr>
                                     <td>${actor[0]}</td>
                                     <td>${actor[1]}</td>
@@ -162,24 +213,26 @@
                                     <td>${actor[4]}%</td>
                                 </tr>
                             `
-            }).join('')}
+                          })
+                          .join('')}
                     </tbody>
-                `;
+                `
 
-            // Chart
-            var wordChartData = [{
-                type: 'pie',
-                values: dataArray.map((actor) => actor[2]),
-                labels: dataArray.map((actor) => actor[0]),
-            }];
+        // Chart
+        var wordChartData = [
+          {
+            type: 'pie',
+            values: dataArray.map((actor) => actor[2]),
+            labels: dataArray.map((actor) => actor[0]),
+          },
+        ]
 
-            Plotly.newPlot('wordsPercent', wordChartData);
+        Plotly.newPlot('wordsPercent', wordChartData)
 
-            if (dataArray.length > 0) {
-                localStorage.setItem('inputText', text);
-            }
-        });
+        if (dataArray.length > 0) {
+          localStorage.setItem('inputText', text)
+        }
+      })
     </script>
-</body>
-
+  </body>
 </html>

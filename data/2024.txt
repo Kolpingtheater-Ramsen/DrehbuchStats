@@ -27,7 +27,7 @@ Name:_______________________
 
 
 
-Blade/ Noxius- Louis
+Blade- Louis
 Raven- Lea
 Hunter- Anton
 Dante- Sebbi
@@ -39,22 +39,29 @@ Alesa- Caro
 Xion- Yunus
 Aria- Elena
 Nyra- Theresa
-KI- Sophia
+KI/ Ensemble- Sophia
 Collin Charleston/ Ensemble- Leon
-Richter- Jules
-Ripper- Jonas
-Lina
-Nela
-Niko
-Fernanda
-Tobi
-Kameramann- Max H.
-Max F.
-Gefangener- Raphael
-(Logge)
-Franek
-(Till)
-(Marc)
+Richter/ Ensemble- Jules
+Ripper/ Ensemble- Jonas
+Daria- Lina
+Freya- Nela
+Jakko- Niko
+Ensemble- Fernanda
+Ensemble- Tobi
+Kameramann/ Ensemble- Max H.
+Ensemble- Max F.
+Ensemble/ Gefangener- Raphael
+Delya Delloraine/ Ensemble- Vanessa
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -254,7 +261,7 @@ BLADE: Bedaure nein, aber ich muss jetzt wirklich los, bevor der Sicherheitsdien
 
 BLADE rennt nach rechts ab.
 
-RAVEN: Du treuloses Schwein!
+RAVEN: Du treuloses Schwein! Ich mach dich fertig!
 
 HUNTER: Raven, was ist los bei euch?
 
@@ -328,7 +335,7 @@ BLADE: (löst sich von der Wand) So ist es.
 
 SERAPHINA, SERENITY und SYBELLA drehen sich um. 
 
-SERAPHINA: Ich wusste es. Habt ihr den Chip?
+SERAPHINA: Ich wusste es. Haben sie den Chip?
 
 BLADE: Was denkt ihr denn? Natürlich! Alles lief nach Plan.
 
@@ -350,7 +357,7 @@ SERAPHINA: Halt den Mund!
 
 BLADE: Bitte meine Damen, es wäre doch viel besser, den Chip selbst zu nutzen.
 
-SERENITY: Erzählt uns mehr, wie meint ihr das?
+SERENITY: Erzählt uns mehr, wie meinen sie das?
 
 BLADE: Nunja, sie, die “Chrome”- Schwestern, haben die nötigen Credits, um die Technologie selbst zu erforschen und massentauglich zu machen, und ich habe gute Kontakte zu Leuten, die die Entwicklung voranbringen können.
 
@@ -376,7 +383,7 @@ SERENITY & SYBELLA: (gleichzeitig) Einverstanden!
 
 Der Besprechungskreis löst sich auf.
 
-SERAPHINA: Wir nehmen euer Angebot an.
+SERAPHINA: Wir nehmen ihr Angebot an.
 
 BLADE: Ich wusste, ihr seid für eine innovative Geschäftsidee offen.
 
@@ -384,9 +391,13 @@ Die beiden Parteien reichen sich die Hände. BLADE, SERAPHINA, SYBELLA und SEREN
 
 SZENE 5:
 
-Die Bildschirme gehen an. COLLIN CHARLSTON (Leon) betritt die Bühne von links. Eine Kamera verfolgt ihn. In der Mitte der Bühne versammeln sich aus allen Richtungen die BEWOHNER der Stadt. Unter ihnen sind VEGA, ARIA und NYRA, ebenso wie ALESA und DEXTER. COLLIN wird auf allen Bildschirmen übertragen.
+Die Bildschirme gehen an. COLLIN CHARLSTON (Leon) & DELYA DELLORAINE (Vanessa) betreten die Bühne von links. Eine Kamera verfolgt sie. In der Mitte der Bühne versammeln sich aus allen Richtungen die BEWOHNER der Stadt. Unter ihnen sind VEGA, ARIA und NYRA, ebenso wie ALESA und XION. COLLIN wird auf allen Bildschirmen übertragen.
 
-COLLIN: Hier spielt sich gerade großes ab. Die reichen Chrome-Schwestern haben bekannt gegeben, dass sie einen eigenen Konzern gründen wollen. Mit einem Newcomer als CEO wollen sie sich an die Entwicklung neuer Technologien wagen. Ein Schwerpunkt ihrer Forschung liegt auf der Verbesserung kognitiver Fähigkeiten. Wie das genau gehen soll, erklären ihnen die neuen Konzerninhaberinnen selbst.
+DELYA: Mein Name ist Delya Delloraine. Ich stehe hier mit meinem Kollegen Collin Charleston vor den Chrome Towern. Nach unseren Informationen soll es gleich große Neuigkeiten geben. Collin, bist du schon genauso aufgeregt wie ich?
+
+COLLIN: Absolut Delya, denn hier spielt sich gerade Großes ab. Die reichen Chrome-Schwestern haben bekannt gegeben, dass sie einen eigenen Konzern gründen wollen. Mit einem Newcomer als CEO wollen sie sich an die Entwicklung neuer Technologien wagen. Ein Schwerpunkt ihrer Forschung liegt auf der Verbesserung kognitiver Fähigkeiten. 
+
+DELYA: Interessant Collin. Wie das genau gehen soll, erklären ihnen die neuen Konzerninhaberinnen selbst.
 
 Auf der Brücke erscheint SERAPHINA. Kamera schwenkt auf Brücke.
 
@@ -398,9 +409,9 @@ SERAPHINA: Um unsere Technologie bestens zu schützen, haben wir Xion Venom als 
 
 XION betritt die Brücke.
 
-SERAPHINA: Das Schicksal unserer Firma haben wir in die Hände von Blade Noxius gelegt. Er wird als CEO den Konzern führen.
+SERAPHINA: Das Schicksal unserer Firma haben wir in die Hände von Blade Nocturne gelegt. Er wird als CEO den Konzern führen.
 
-BLADE betritt die Brücke. Auf den Bildschirmen wird ein Film eingespielt. Alle, die vor der Brücke stehen, gehen ab. Auf der Brücke gehen ALESA, XION und SERAPHINA ab. BLADE bleibt allein dort stehen. Der Film zeigt den Aufstieg des Unternehmens. BLADE geht ab.
+BLADE betritt die Brücke. Auf den Bildschirmen wird ein Film eingespielt. ALLE, die vor der Brücke stehen, gehen ab. Auf der Brücke gehen ALESA, XION und SERAPHINA ab. BLADE bleibt allein dort stehen. Der Film zeigt den Aufstieg des Unternehmens. BLADE geht ab.
 
 SZENE 6:
 
@@ -476,13 +487,76 @@ BLADE: Das mit dem Master geht runter wie Öl. Dann wollen wir sie zeitnah mal a
 
 ALESA: Sie wird euch nicht enttäuschen.
 
-BLADE: Davon gehe ich aus.
+BLADE: Das hoffe ich.
 
 BLADE, ALESA und die FORSCHER gehen nach rechts ab. Die KI verschwindet auf den Bildschirmen.
 
 SZENE 7:
 
-Der Club links fährt auf. HUNTER ist an den Tresen gelehnt. VEGA und ARIA kommen mit einem Beutel von rechts. VEGA wirft HUNTER den Beutel hin.
+Der Club links fährt auf. Darin herrscht reges Treiben. HUNTER steht an der Bar. Dahinter steht eine BARFRAU. An den Tischen sitzen mehrere Bewohner. Man hört gedämpfte Musik. An einem Tisch vorne sitzt der RIPPER. Von rechts kommen KINDER auf die Bühne und betreten die Bar. Sie gehen an den Tisch des RIPPERS.
+
+RIPPER: Nah, habt ihr was schönes für mich besorgen können?
+
+DARIA: Leider nur das hier.
+
+DARIA legt ein Implantat auf den Tisch.
+
+RIPPER: (aufgebracht) Wollt ihr mich verarschen? Das ist der größte Müll.
+
+JAKKO: Aber wir haben nichts Besseres gefunden.
+
+FREYA: Du hast uns 10 Credits versprochen.
+
+RIPPER: Das Ding ist nicht mal einen Credit wert. Da ist ein Virus drauf. Und jetzt zieht Leine!
+
+DARIA: Aber wir brauchen die Credits.
+
+JAKKO: Wie sollen wir uns sonst etwas zu Essen kaufen?
+
+RIPPER: (zieht Waffe) Verschwindet, habe ich gesagt!
+
+HUNTER kommt von der Bar.
+
+HUNTER: Gibt es hier Probleme?
+
+FREYA: Er will uns die versprochenen Credits nicht zahlen, obwohl wir ihm das Implantat gebracht haben.
+
+RIPPER: Da ist ein verschissener Virus drauf! Was soll ich denn damit anfangen?
+HUNTER: Nun, wenn das aber abgemacht war, solltest du ihnen besser das Geld geben.
+
+RIPPER: Was mischst du dich eigentlich ein, Alter? Kümmere dich um deine eigenen Angelegenheiten.
+
+RIPPER zielt auf HUNTER. Daraufhin schauen alle im Club auf HUNTER und die Musik verstummt.
+
+HUNTER: Du solltest besser nicht denjenigen bedrohen, der den Leuten hier die Drinks ausschenkt. An deiner Stelle würde ich den Kindern jetzt ganz schnell die versprochenen Credits geben und dann zusehen, dass du Land gewinnst.
+
+Der RIPPER murrt kurz, steckt die Waffe weg und legt dann die Credits auf den Tisch und geht ab. Die KINDER nehmen die Credits. Die Musik beginnt wieder zu spielen und alle gehen dem gewohnten Gang nach.
+
+DARIA: Danke Mister Hunter.
+
+HUNTER: Keine Ursache Kleine. Ich kann so Typen wie ihn nicht ausstehen. Man muss seine Schulden immer begleichen.
+
+HUNTER geht zurück an die Bar. Der Club fährt zu. Die KINDER verlassen die Bühne nach rechts. ARIA und VEGA kommen von hinten. ARIA hat einen großen Beutel dabei.
+
+VEGA: Du hast den Typen aber ganz schön weichgekocht.
+
+ARIA: Nichts leichter als das. Früher oder später rücken sie immer mit der Kohle raus. Er hätte die Credits halt sinnvoll investieren sollen und nicht in irgendwelche dubiosen Geschäfte. Selbst schuld.
+
+VEGA: Stimmt. (Blick schweift in die Ferne) Meinst du irgendwann werden wir auch mal einen großen Coup landen und reich und satt in der Oberstadt enden?
+
+ARIA: Natürlich, wenn Hunter endlich mal einen fetten Job für uns hat. Aber die Frage ist, ob du das wirklich willst. Nur unter so reichen Pinkeln leben? Ich hätte da nicht so Bock drauf.
+
+VEGA: Da hast du natürlich Recht. Aber wäre schon witzig so ne` “Reichenparty” mal aufzumischen.
+
+ARIA: Absolut, dann zeigen wir denen mal, wie man richtig feiert. 
+
+VEGA: Aber zuerst müssen wir uns die Credits dafür verdienen. Lass mal die Belohnung abholen.
+
+Der Club links fährt auf. HUNTER ist an den Tresen gelehnt. Er schenkt sich einen Drink ein. VEGA und ARIA kommen mit einem Beutel von rechts. 
+
+HUNTER: Ihr habt euch aber Zeit gelassen.
+
+VEGA wirft HUNTER den Beutel hin.
 
 HUNTER: Ist das alles?
 
@@ -506,13 +580,13 @@ VEGA muss ARIA etwas zurückhalten.
 
 VEGA: Hatten wir nicht mehr ausgemacht?
 
-HUNTER: Das ist euer Anteil. Wenn die Beute geringer ausfällt, ist auch euer Anteil geringer.
+HUNTER: Mehr gibt es nicht. Wenn die Beute geringer ausfällt, ist auch euer Anteil kleiner.
 
-ARIA dreht sich wütend um und sieht NYRA. Sie packt sie und zieht sie in den Club.
+ARIA dreht sich wütend um und sieht NYRA. Sie packt sie im Nacken und zieht sie in den Club.
 
 ARIA: Hast du uns belauscht?
 
-VEGA: Aria, reis dich zusammen.
+VEGA: Aria, reiß dich zusammen.
 
 ARIA: Ich kann kleine Schnüffler nicht leiden. 
 
@@ -542,7 +616,7 @@ VEGA: Könntest du uns in sowas nicht auch früher einweihen? Außerdem wird sic
 
 HUNTER: Der Typ ist durch. Besser ihr gewöhnt euch an die Zusammenarbeit mit ihr. Der nächste Job ist eine ganz große Nummer.
 
-ARIA: (zu NYRA) Da hoffe ich mal, dass du dem auch gewachsen bist. Woher hast du denn dein Wissen?
+ARIA: (zu NYRA) Da hoffe ich mal, dass du dem auch gewachsen bist. Wir warten nämlich schon extrem lange auf die richtig fette Beute. Woher hast du denn dein “Wissen”?
 
 NYRA: Vieles selbst beigebracht, aber ich hab im Netz mit den ganz Großen geschrieben und ihre Arbeit studiert.
 
@@ -558,7 +632,7 @@ SZENE 8:
 
 RAVEN kommt von hinten. Sie hat einen Rucksack dabei. Sie wird von zwei WACHEN begleitet.
 
-WACHE 1: Sie sind jetzt frei. Ich hoffe für sie, dass wir uns nicht mehr wiedersehen.
+WACHE: Sie sind jetzt frei. Ich hoffe für sie, dass wir uns nicht mehr wiedersehen.
 
 Die WACHEN gehen nach hinten ab. RAVEN atmet durch. BEWOHNER füllen die Bühne. VEGA schleicht sich von links auf die Bühne. Sie trägt eine Kapuze. RAVEN geht umher und sieht sich die Leuchtreklamen an.
 
@@ -590,11 +664,11 @@ RAVEN: Ihr seid wirklich gut, oder ich bin im Knast eingerostet.
 
 VEGA: Hunter hat uns vorgewarnt, dass du vielleicht nicht freiwillig mitkommen würdest. 
 
-RAVEN: Da hat er mir zur Sicherheit einen ganz bezaubernden Geleitschutz vorbeigeschickt. Sehr aufmerksam von ihm. Was macht der Alte eigentlich?
+RAVEN: Da hat er mir zur Sicherheit einen ganz bezaubernden Geleitschutz vorbeigeschickt. Sehr aufmerksam von ihm. Was macht er eigentlich?
 
-ARIA: Er betreibt den “Voltage Club”. Einen der besten Nachtclubs der ganzen Unterstadt. 
+ARIA: Er betreibt das “High Voltage”. Einen der besten Nachtclubs der ganzen Unterstadt. 
 
-RAVEN: Verstehe, das passt zu ihm. Dann wollen wir ihn mal besuchen.
+RAVEN: Verstehe, das passt zu ihm, sein eigenes kleines Königreich. Dann wollen wir ihn mal besuchen.
 
 VEGA und ARIA bringen RAVEN nach rechts von der Bühne. Die BEWOHNER verlassen die Bühne.
 
@@ -610,9 +684,10 @@ VEGA: Hunter wartet drinnen. Und er hasst es, wenn man ihn warten lässt.
 
 ARIA: Im Club geht es hoch her. Bleibt am besten an der Bar, bis er Zeit für euch hat.
 
-RAVEN: Verstanden.
+RAVEN:  Als hätte ich nicht schon lang genug gewartet.
 
-Der Club öffnet sich. Im Inneren machen viele BEWOHNER Party. Unter ihnen ist auch NYRA. Die Musik wird laut. Es wird getanzt.
+Der Club öffnet sich. Betrunkener taumelt aus der Bar. RAVEN nimmt ihm eine Flasche ab.
+Im Inneren machen viele BEWOHNER Party. Unter ihnen ist auch NYRA. Die Musik wird laut. Es wird getanzt.
 
 LIED: Saturday Night
 
@@ -620,7 +695,7 @@ Hunter erscheint. ALLE blicken zu ihm.
 
 HUNTER: Freunde, es freut mich überaus, dass ihr in dieser denkwürdigen Nacht wieder meine Gäste seid, denn heute darf ich eine gute Freundin wieder zurück bei uns begrüßen. Die großartige, fast schon legendäre Raven ist aus dem Gefängnis entlassen worden. Das müssen wir feiern. (hebt ein Glas) Auf Raven.
 
-ALLE: Auf Raven!
+ALLE: Auf Raven! (RAVEN hält Mittelfinger in die Luft)
 
 Die BEWOHNER beginnen wieder zu tanzen und zu trinken. HUNTER und RAVEN gehen zur Bar. VEGA, ARIA und NYRA mischen sich unter die BEWOHNER.
 
@@ -684,43 +759,11 @@ RAVEN, VEGA und ARIA gehen nach rechts ab. HUNTER bleibt an der Bar. Der Club f�
 
 SZENE 10:
 
-Werkstatt fährt auf. DANTE sitzt darin an einem Tisch und begutachtet eine Platine. Ihm gegenüber sitzen 1, 2 und 3.
-
-DANTE: Das ist kein Original Implantat, Billigware. Bestimmt ist da ein Virus drauf. Habe ich keine Verwendung für.
-
-1: Aber das ist das einzige, was wir dir heute anbieten können.
-
-DANTE: Tja, zum Überleben zu wenig und zum Sterben zu viel. 
-
-2: Kannst du uns nicht wenigstens ein paar Credits dafür geben. Für etwas zu Essen?
-
-DANTE: Jetzt hört mal, wenn ich diesen alten Neurochip jemandem implantiere, wird der mich verklagen. Wenn er das überhaupt noch kann, da ihn dann ein Virus befallen wird, aber das steht auf einem anderen Blatt.
-
-3: Siehst du, der kann dir dann gar keine Probleme mehr machen.
-
-DANTE: Nein, nein, nein,... nach dem letzten Zwischenfall und der negativen Rezension auf Digiweb, kann ich mir keine “Experimente” mehr erlauben.
-
-1: Aber,...
-
-DANTE: Nein, kein “aber”,... und jetzt tummelt euch.
-
-2: Aber, was zu essen…?
-
-DANTE: Ahhh, na gut, diesem Blick kann ich nicht widerstehen. Das macht mein Herz nicht mit. Hier, nehmt das. Und jetzt verschwindet.
-
-3: Danke, Dante.
-
-DANTE: Los, seht zu, dass ihr Land gewinnt. 
-
-1, 2 und 3 gehen nach hinten ab. DANTE bleibt alleine am Tisch zurück. 
-
-SZENE 11:
-
 RAVEN, VEGA und ARIA kommen von links.
 
 ARIA: Hier ist es. 
 
-RAVEN: Das ging schnell, woher kennst du seinen Aufenthaltsort?
+RAVEN: Woher kennst du Dante?
 
 ARIA: Er hat mich halbtot aus der Gosse gezogen und das Teil hier eingebaut. (zeigt ihren mechanischen Arm) Ohne sein Eingreifen hätte man meinen Arm nicht mehr retten können. 
 
@@ -730,15 +773,13 @@ ARIA: Das wird sich wohl nie ändern… Zum Dank für seine Rettung habe ich ein
 
 RAVEN: Und mit den Implantaten und Neurochips macht er was?
 
-VEGA: Er verbaut sie an seinen Kunden. Für alle, für die neue Implantate zu teuer sind. Sowas wie ein Second-Hand-Shop.
+VEGA: Er verbaut sie an seine Kunden. Für alle, für die neue Implantate zu teuer sind, was hier unten auf so ziemlich jeden zutrifft. Er betreibt quasi einen Second-Hand-Shop.
 
 RAVEN: Seiner Technikbegeisterung hat er also nicht ganz abgeschworen.
 
-VEGA: Ja und mit dem Gesetz nimmt er es auch immer noch nicht so genau. Eigentlich dürfen nur die Hersteller ihre Produkte einbauen. Aber hier unten in den abgelegenen Bezirken interessiert das keinen mehr. 
+ARIA: Naja, überzeug dich selbst, so wie es aussieht, ist er da.
 
-ARIA: So wie es aussieht, ist er da.
-
-RAVEN, VEGA und RAVEN wollen nach hinten, als NYRA von links kommt. VEGA sieht NYRA, dieser ist das sichtlich unangenehm.
+RAVEN, VEGA und ARIA wollen nach hinten, als NYRA von links kommt. VEGA sieht NYRA, dieser ist das sichtlich unangenehm.
 
 VEGA: Nyra? Was machst du denn hier?
 
@@ -764,11 +805,11 @@ ARIA: “Never meet your heroes in Real Life.” Bewahre dir lieber dein Idealbi
 
 NYRA: Aber,...
 
-VEGA: Kein “aber”. Los jetzt, wir haben etwas zu tun.
+VEGA: Kein “aber”. Wir haben gerade keine Zeit für Fangirls. Los jetzt, wir haben etwas zu tun.
 
 RAVEN, VEGA, und ARIA gehen nach hinten ab. NYRA setzt sich schmollend an den Bühnenrand.
 
-SZENE 12:
+SZENE 11:
 
 Die Werkstatt fährt auf. DANTE tanzt zu Musik durch die Werkstatt, während er allerhand zu tun hat. Er bemerkt nicht, wie nach kurzer Zeit RAVEN, VEGA und ARIA hinter ihm stehen. Als er sich umdreht, erschrickt er.
 
@@ -784,7 +825,7 @@ DANTE: Nein, ist es denn möglich. Hi,... ähm,... mit dir habe ich ehrlich gesa
 
 RAVEN: Ja, ich habe meine Strafe abgesessen.
 
-DANTE: Wenn ich gewusst hätte, dass du kommst, hätte ich natürlich aufgeräumt. Und was zu Essen gekocht,... dazu bräuchte ich erstmal eine richtige Küche,... (greift offene Chipstüte) Chips?
+DANTE: Wenn ich gewusst hätte, dass du kommst, hätte ich natürlich aufgeräumt. Und was zu Essen gekocht,... aber dazu bräuchte ich erstmal eine richtige Küche,... (greift offene Chipstüte) Chips?
 
 RAVEN: Nein, danke,... wir sind hier, weil wir deine Hilfe brauchen. 
 
@@ -798,9 +839,9 @@ RAVEN: Warum das denn?
 
 DANTE: Ich habe mir geschworen, nichts mehr digitales anzufassen, geschweige denn etwas illegales zu machen.
 
-RAVEN: Und was ist das hier dann?
+RAVEN: Und was ist das hier dann? (geht in der Werkstatt umher)
 
-DANTE: Hey, ich habe früher mit meinen Fähigkeiten viel Scheiße gebaut, okay? Ich will das Ganze wieder etwas gut machen. Aber sonst lass ich die Finger davon.
+DANTE: Hey, ich habe früher mit meinen Fähigkeiten viel Scheiße gebaut, okay? Ich will das Ganze wieder etwas gut machen, indem ich den Menschen hier helfe. Aber sonst lass ich die Finger davon.
 
 RAVEN: Du bist ganz ohne Technik glücklich?
 
@@ -820,41 +861,41 @@ RAVEN, VEGA und ARIA gehen nach hinten ab.
 
 DANTE: Autsch,... naja, jetzt brauche ich etwas, um mich aufzumuntern. (nimmt Schallplatte) Musik.
 
-DANTE legt die Schallplatte auf und es ertönt traurige Musik. RAVEN, ARIA und VEGA kommen von hinten und gehen dann nach links ab. NYRA sieht das und schleicht sich nach hinten von der Bühne. DANTE blick RAVEN seufzend hinterher. NYRA kommt von hinten in die Werkstatt.
+DANTE legt die Schallplatte auf und es ertönt traurige Musik. Er öffnet einen Schrank und Bilder von RAVEN kommen zum Vorschein. RAVEN, ARIA und VEGA kommen von hinten und gehen dann nach links ab. NYRA sieht das und schleicht sich nach hinten von der Bühne. DANTE blickt RAVEN seufzend hinterher. NYRA kommt von hinten in die Werkstatt.
 
-NYRA: Entschuldige, ich wollte  nur fragen, ob wir vielleicht ein Foto…
+NYRA: Entschuldige, ich wollte nur fragen, ob wir vielleicht ein Foto…
 
-DANTE: Heiliger BimmBamm,... willst du mich umbringen? Was ist denn nun schon wieder?
+DANTE: (schlägt Schrank zu) Heiliger BimmBamm,... willst du mich umbringen? Was ist denn nun schon wieder?
 
-NYRA: Können wir ein Foto machen? Du musst wissen, ich bin ein großer Fan. Krass, ich hätte nie gedacht, dass ich dich mal leibhaftig treffe. 
+NYRA: (aufgeregt) Können wir ein Foto machen? Du musst wissen, ich bin ein großer Fan. Krass, ich hätte nie gedacht, dass ich dich mal im Reallife treffe. 
 
-NYRA hält ihr Handy hoch und DANTE grinst verwirrt.
+NYRA zieht DANTE zu sich, hält ihr Handy hoch und DANTE grinst verwirrt.
 
 DANTE: Fan?
 
-NYRA: Naja, als ich angefangen habe zu programmieren, warst du die große Figur in der Hackingszene. Wie du es ohne Mühe geschafft hast bei Digitech oder Yakuza in die Systeme reinzukommen, oder als du ganz alleine…
+NYRA: (tippt auf Handy) So, gepostet. Naja, als ich angefangen habe zu programmieren, warst du die große Figur in der Hackingszene. Wie du es ohne Mühe geschafft hast bei Digitech oder Yakuza in die Systeme reinzukommen, oder als du ganz alleine…
 
 DANTE: Die Zeiten sind vorbei.
 
-NYRA: Aber du bist ein Genie. Vergeude dein Talent doch nicht hier an diesem Ort.
+NYRA: Aber du bist ein Genie. Vergeude dein Talent doch nicht hier an diesem… Ort.
 
 DANTE: Aber hier ist es doch ganz nett.
 
-NYRA: Naja, Ansichtssache. Hast du denn gar keine Träume, für die du noch etwas wagen willst?
+NYRA: Naja,... (blickt sich irritiert um). Hast du denn gar keine Träume, für die du noch etwas wagen willst?
 
 DANTE: Pff, Träume,... Wir haben damals den Hals nicht voll bekommen und immer den nächsten Kick gesucht. Immer höher, schneller, weiter. Nie war das, was wir für einen Job bekommen haben genug. Es musste immer mehr sein. Wenn ich dir einen Tipp geben darf: Nimm was du kriegen kannst und dann hau ab. Erfüll dir deinen Traum, bevor es zu spät ist und du ihm Knast landest,... oder schlimmeres. Hast du überhaupt einen Traum?
 
 NYRA: Ich will unbedingt einmal die Ödnis durchqueren und das Meer sehen. Den Duft der See einatmen und den Sand unter den Füßen...
 
-DANTE: Das ist ja ein süßer Traum,... aber auch sooo kitschig. Hey, wenn es das ist, was dich antreibt, dann solltest du jede Möglichkeit nutzen, die dich deinem Traum näher bringt.
+DANTE: Das ist ja ein süßer Traum,... aber auch sooo kitschig. Hey, wenn es das ist, was dich antreibt, dann solltest du jede Möglichkeit nutzen, die dich deinem Traum näher bringt, bevor es zu spät ist.
 
 NYRA: Das versuche ich. Ich bin neu in einem Team und wir haben jetzt einen megakrassen Auftrag. Dann kommen wir gemeinsam groß raus und können uns zusammen…
 
-DANTE: Nein, nein, völlig falsch. Du musst auch mal an dich denken. So sehr ich Blade dafür hasse: Er lebt seinen Traum. Und ich Vollidiot, der sich um seine Gruppe gekümmert hat, sitzt hier in diesem Loch. Wenn du rechtzeitig den Absprung schaffst, verfolge deinen Traum. Fahr ans Meer oder was auch immer, aber bleibe nicht auf dem Hamsterrad stecken. 
+DANTE: Nein, nein, völlig falsch. Du denkst zu sehr vom Kollektiv her, aber du musst auch mal an dich denken. So sehr ich Blade dafür hasse: Er lebt seinen Traum. Und ich Vollidiot, der sich um seine Gruppe geschert hat, sitzt hier in diesem Loch. Wenn du rechtzeitig den Absprung schaffst, verfolge deinen Traum. Fahr ans Meer oder was auch immer, aber bleibe nicht auf dem Hamsterrad stecken. 
 
 NYRA: Ich weiß nicht recht,...
 
-DANTE: Ach, tut mir leid, dass ich dich mit dem Groll meiner gescheiterten Existenz belastet habe. 
+DANTE: Hey,... ach, tut mir leid. Weißt du wer mich immer aufmuntert? Captain Kuschel! Er ist ein sehr guter Zuhörer. Wegen der großen Ohren verstehst du? (gibt NYRA Plüschhasen) Ich wollte dich nicht mit dem Groll einer gescheiterten Existenz belasten.
 
 NYRA: Aber du bist nicht gescheitert. Dein Name ist immer noch ein großer in der Hackingszene. Ich habe so viel im Netz von dir gelernt. Man schaut zu dir auf,... auch wenn viele gar nicht wissen, was aus dir geworden ist.
 
@@ -874,7 +915,7 @@ DANTE: Jaja, bis dann.
 
 DANTE legt wieder Musik auf und NYRA geht nach hinten ab. Sie geht auf die Bühne und läuft nachdenklich an der Werkstatt vorbei nach links ab. Die Werkstatt fährt zu.
 
-SZENE 13:
+SZENE 12:
 
 XION kommt von links und hat zwei WACHEN dabei. Sie bringen einen GEFANGENEN. Das Labor fährt auf. Darin steht ALESA mit einem FORSCHER.
 
@@ -908,7 +949,7 @@ XION: Mach du dein Forschungsdings und dieses Mal ordentlich! Ich besorge das n�
 
 XION geht mit den WACHEN nach hinten ab. Sie tragen den GEFANGENEN weg. ALESA bleibt mit dem FORSCHER im Labor. Das Labor fährt zu.
 
-SZENE 14:
+SZENE 13:
 
 RAVEN kommt mit VEGA auf die Brücke.
 
@@ -944,7 +985,7 @@ NYRA verbindet sich mit dem PC und ARIA sucht den Chip.
 
 ARIA: Wie soll ich hier bitte so einen kleinen Chip finden?
 
-NYRA zuckt vor Schmerz zusammen.
+Auf den Bildschirmen werden Zahlencodes eingeblendet. Außerdem sieht man verschiedene Aufzeichnungen von BLADE. Daraufhin zuckt NYRA vor Schmerz zusammen.
 
 ARIA: Was ist?
 
@@ -976,11 +1017,13 @@ BLADE: Besuch? Um diese Uhrzeit? Warum beehrt ihr uns so spät mit eurer Anwesen
 
 ARIA: Fick dich! Ich schlitz dich auf du Bastard!
 
-XION: Ich könnte sie zum Reden bringen!
+XION: Ich könnte sie zum Reden bringen! (zieht ein Messer)
 
 BLADE: Also bitte, wir sind doch nicht grausam. Wir sind ein ganz normaler, seriöser Konzern. Legt sie um und werft sie in die Kanalisation.
 
 ALESA: Aber Chef, wir könnten sie als Versuchspersonen verwenden. Jetzt, wo sie sowieso da sind.
+
+XION: So ein paar junge Streuner aus der Unterstadt vermisst niemand.
 
 BLADE: Von mir aus. (beugt sich zu ARIA und NYRA) Ihr habt jetzt das große Glück, unseren neuen Neurochip auszuprobieren. Ist das nicht eine große Ehre?
 
@@ -988,7 +1031,7 @@ ARIA: Ich schieb dir deinen Neurochip gleich in sämtliche Körperöffnungen.
 
 BLADE: Fangt mit dem vorlauten Giftzwerg an.
 
-Die WACHEN legen ARIA auf den Tisch.
+Die WACHEN befestigen ARIA auf dem Tisch.
 
 RAVEN: Meine Verbindung ist weg? Hörst du sie?
 
@@ -1006,7 +1049,7 @@ ARIA bäumt sich kurz auf und sackt dann leblos zusammen. NYRA sieht dem Ganzen 
 
 BLADE: Schon wieder nichts? Willst du mich verarschen, Alesa? Für was bezahle ich dich und deine Leute?
 
-ALESA: Einen Versuch haben wir noch,... XION, würdest du? (deutet auf den Tisch)
+ALESA: Einen Versuch haben wir noch,... Xion, würdest du? (deutet auf den Tisch)
 
 XION: Jaja, ich weiß. In die Kanalisation.
 
@@ -1040,17 +1083,15 @@ RAVEN: Jetzt sag schon, können wir sie da rausholen?
 
 VEGA: Zwecklos. Nyra ist noch da drinnen und Aria haben sie wohl,...
 
-RAVEN: Was?
+RAVEN: Was (ist mit ihr)?
 
 VEGA: Wir müssen schnell in die Kanalisation. Eine letzte Hoffnung gibt es noch. Los!
 
 VEGA und RAVEN gehen von der Brücke ab.
 
-Sektwerbung Blade?
-
 PAUSE
 
-Szene 15:
+Szene 14:
 
 VEGA und RAVEN schleichen sich von links auf die Bühne. Von hinten kommt XION mit zwei WACHEN. Sie haben die leblose ARIA dabei. Sie legen sie hin. XION begutachtet sie.
 
@@ -1088,55 +1129,131 @@ XION: (funkt) Sicherheitsdienst. Es sind Eindringlinge auf dem Gelände. Durchk�
 
 Der Alarm geht los. XION geht nach hinten und RIPPER nach rechts ab. WACHEN rennen hektisch über die Bühne.
 
-SZENE 16: 
+SZENE 15: 
+
+Das Labor fährt auf. Darin ist ALESA an den Versuchsgeräten. NYRA sitzt auf dem Tisch. Zwei WACHEN stehen hinter dem Tisch.
+
+ALESA: Wirklich fantastisch, dass der Chip noch funktioniert hat. Ich hatte ehrlich gesagt kurz Angst um meinen Job. Aber hey, du wirst uns sicher noch nützen. Immerhin hast du dich in unseren Hauptcomputer gehackt. Das schafft nicht jeder. Dann wollen wir mal sehen, was du kannst. Ich habe hier einen kleinen Versuchsaufbau vorbereitet. Vielleicht kannst du uns dort mal dein Können zeigen.
+
+NYRA stellt sich auf und geht an die Geräte, verbindet sich mit ihnen und beginnt mit dem Programmieren. BLADE betritt den Raum.
+
+BLADE: Alesa, jemand hat sich auf unser Gelände geschlichen und dieses vorlaute Gör aus der Kanalisation gefischt. Somit hat er jetzt auch einen Prototypen des Chips.
+
+ALESA: Jeder Chip zerstört sich selbst, sollte er von Dritten ausgelesen werden.
+
+BLADE: Das beruhigt mich jetzt nicht gerade. Wie viele von deinen Modellen haben schon nicht funktioniert? Da soll ich mich auf so etwas verlassen?
+
+ALESA: Immerhin funktioniert dieser Chip. (zeigt stolz auf NYRA)
+
+BLADE: Mhm,... das muss man dir lassen. Was macht sie da?
+
+ALESA: Ich teste ihr Können. Sie hat sich in unseren Hauptcomputer gehackt. Das zeugt von großem Talent. Vielleicht können wir es für uns nutzen.
+
+BLADE und ALESA wenden sich NYRA zu.
+
+BLADE: Wirklich beeindruckend. Das hättest du sicher nicht schneller hinbekommen.
+
+ALESA: Was soll das denn jetzt heißen?
+
+BLADE: Beruhige dich: Ihr Neurochip funktioniert. Also kein Grund zur Beunruhigung. Aber eins würde mich noch interessieren: Nyra heißt du, nicht wahr?
+
+NYRA: Ja, Master.
+
+BLADE: Kannst du erklären, warum der Neurochip deiner kleinen Freundin nicht funktioniert hat?
+
+NYRA: Laut ihren Aufzeichnungen war der Zentrator falsch herum eingebaut. Dadurch kam es zu einer Umkehrung, welche einen Kurzschluss verursacht haben.
+
+BLADE: Und was war an deinem Chip besser?
+
+NYRA: Ähm,... also der,...
+
+ALESA: Der Zentrator ist hier auch anders herum eingebaut. Nur blieb hier der Kurzschluss aus.
+
+BLADE: Ja, wenn ich  mir sie so ansehe, hat sie nagelneue Cyberware, die sie vor Überspannung schützt.
+
+BLADE packt NYRA im Genick.
+
+BLADE: Wem willst du hier etwas vormachen?
+
+ALESA: Heißt das, sie hat das alles nur gespielt?
+
+BLADE: Ach, hast du es auch endlich gecheckt. (zu NYRA) Irgendwelche letzten Worte, bevor wir dich spurlos beseitigen?
+
+NYRA: Bitte, ich kann euch helfen. Ich habe euch gerade die Lösung eures Neurochipproblems genannt. Ich kann euch nützlich sein.
+
+BLADE: Und warum solltest du einfach so deine Freunde verraten?
+
+NYRA: Haben Sie das nicht auch getan?
+
+BLADE: Du kennst meine Geschichte?
+
+NYRA: Ja, und Sie hatten Recht. Man muss manchmal rücksichtslos sein, wenn man seine eigenen Träume nicht aus den Augen verlieren will. Das hat sogar Dante zu mir gesagt.
+
+BLADE: Ach, hat er das?
+
+NYRA: Ja, er versteht Sie sogar,  dass Sie alles für ihren Traum getan haben.
+
+BLADE: Da ist der auf seine alten Tage doch noch einmal zur Vernunft gekommen. (lässt NYRA los) Na gut, du hast Recht, du kannst uns von Nutzen sein. Mache die Neurochips funktionstüchtig und du sollst reich entlohnt werden. Wenn du uns jedoch hintergehst oder versagst, wirst du einen langsamen, qualvollen Tod sterben. Ist das klar?
+
+NYRA: Ja,...
+
+BLADE: Sehr gut! Alesa? Assistiere Nyra bei ihren Vorhaben.
+
+ALESA: Assistieren?
+
+BLADE: Ich erwarte zeitnah Ergebnisse. Viel Vergnügen euch.
+
+BLADE und die WACHEN gehen nach hinten ab. ALESA mustert NYRA böse. Das Labor fährt zu.
+
+SZENE 16:
 
 Die Werkstatt fährt auf. Darin spielt DANTE mit den KINDERN UNO. Er hat sehr viele Karten auf der Hand.
 
-1: Du musst vier ziehen.
+DARIA: Du musst vier ziehen.
 
 DANTE: Schon wieder?
 
-1: Und einmal aussetzen.
+DARIA: Und einmal aussetzen.
 
 DANTE: Ihr kleinen miesen…
 
-3: Du hast gesagt, man darf nicht fluchen.
+FREYA:Du hast gesagt, man darf nicht fluchen.
 
 DANTE: Ja, manchmal sag ich richtig dumme Dinge.
 
-2: Jetzt muss aber Chloe auch zwei ziehen.
+JAKKO: Jetzt muss aber Daria auch zwei ziehen.
 
-1: Falsch, Dante muss vier ziehen. Uno.
+DARIA: Falsch, Dante muss vier ziehen. Uno.
 
 DANTE: Ich hasse Gesellschaftsspiele!
 
-3: Es ist doch nur ein Spiel.
+FREYA:Es ist doch nur ein Spiel.
 
-1: Uno, Uno. Ich hab gewonnen.
+DARIA: Uno, Uno. Ich hab gewonnen.
 
 DANTE holt tief Luft.
 
-2: Denk daran: Nicht fluchen!
+JAKKO: Denk daran: Nicht fluchen!
 
 DANTE geht vor die Tür und schlägt diese zu.
 
 DANTE (off): So eine verfickte Drecksscheiße! Ich dreh euch Bälgern noch den Hals um. Dann vergeht euch euer selbstgefälliges Grinsen.
 
-1: Meint ihr, er ist sauer?
+DARIA: Meint ihr, er ist sauer?
 
-3: Der hat sich gleich wieder.
+FREYA:Der hat sich gleich wieder.
 
 DANTE kommt wieder zur Tür herein und atmet in eine Tüte. Dann zerknüllt er diese und wirft sie nach hinten.
 
 DANTE: Hat Spaß gemacht.
 
-2: Noch eine Runde?
+JAKKO: Noch eine Runde?
 
 DANTE: Morgen vielleicht… los haut ab, ich muss noch arbeiten. 
 
-1, 2 und 3 gehen nach hinten ab. 
+JAKKO, DARIA und FREYA gehen nach hinten ab. 
 
-1: Bis morgen!
+DARIA: Bis morgen!
 
 DANTE: Jaja, bis morgen… 
 
@@ -1144,7 +1261,7 @@ DANTE macht das Radio an.
 
 RADIO: (Off) Hallo, hier ist Collin Charleston mit einer Eilmeldung: Es gab einen Einbruch bei Quantum Industries. Wer etwas gesehen hat, kann sich an die Firmenleitung wenden. Es winkt eine dicke Belohnung.
 
-Von hinten betreten RAVEN, VEGA mit ARIA die Werkstatt.
+Von hinten betreten RAVEN & VEGA mit ARIA die Werkstatt.
 
 DANTE: Herrje, könnt ihr nicht anklopfen? Kind, was ist denn mit ihr passiert?
 
@@ -1186,7 +1303,7 @@ VEGA umarmt sie.
 
 VEGA: Jag mir bitte nie wieder so einen Schrecken ein. Ich dachte du bist verloren.
 
-ARIA: Man bekommt mich nicht kaputt. Aber wie bin ich hier gelandet?
+ARIA: Keine Sorge, man bekommt mich nicht kaputt. Aber wie bin ich hier gelandet?
 
 RAVEN: Das erzählen wir dir gleich. (zu DANTE) Kannst du sagen, was das gerade war?
 
@@ -1214,19 +1331,7 @@ RAVEN geht nach hinten ab. Die Werkstatt fährt zu.
 
 SZENE 17:
 
-BLADE kommt von hinten. ALESA, XION und zwei WACHEN folgen ihm. Die WACHEN tragen eine kleine Box.
-
-BLADE: (zu XION) Die sind einfach mit der Leiche von ihr abgehauen? 
-
-XION: Ja, ich weiß ja auch nicht, was die mit der wollten.
-
-BLADE: Jetzt ist deinetwegen ein Prototyp des Chips in Umlauf. Vollidiot!
-
-ALESA: Mach dir deshalb keine Sorgen. Die Nexus-KI zerstört den Chip, sobald dieser in fremde Hände gelangt und ausgelesen wird.
-
-BLADE: Hoffen wir mal, dass das klappt. 
-
-Von rechts kommen SERAPHINA, SERENITY und SYBELLA.
+BLADE kommt von hinten. ALESA, XION und zwei WACHEN folgen ihm. Die WACHEN tragen eine kleine Box. Von rechts kommen SERAPHINA, SERENITY und SYBELLA.
 
 BLADE: Da schau an, Besuch.
 
@@ -1240,9 +1345,15 @@ SYBELLA: Ist das so?
 
 ALESA winkt die Wachen her, öffnet die Box und holt den Chip heraus.
 
-ALESA: Das ist die neue Generation der Neurochips. Unbegrenztes Surfen von überall möglich. Sich einfach mit seinem Bewusstsein im Real Life abmelden und ins Netz abtauchen. Natürlich gibt es noch zahlreiche andere Features, wie eine KI: Diese ist als Helfer und persönlicher Assistent auf dem Chip integriert. Wir nennen sie die “Nexus-KI”.
+ALESA: Das ist die neue Generation…
 
-BLADE: Und überzeugt?
+BLADE stößt ALESA zur Seite.
+
+BLADE: Das ist eine neue Generation der Neurochips. Unbegrenztes Surfen von überall möglich. Sich einfach mit seinem Bewusstsein im Real Life abmelden und ins Netz abtauchen. Natürlich gibt es noch zahlreiche andere Features, wie eine KI: Diese ist als Helfer und persönlicher Assistent auf dem Chip integriert. Wir nennen sie die…
+
+ALESA: “Nexus-KI”.
+
+BLADE: Die “Nexus-KI”, natürlich. Toller Name, ist von mir. Was sagen sie?
 
 SERAPHINA: Ich muss sagen, das klingt wirklich sehr beeindruckend. 
 
@@ -1260,47 +1371,23 @@ ALESA geht mit den beiden WACHEN, SERENITY, SERAPHINA und SYBELLA nach hinten ab
 
 XION: Sie haben wirklich euren Köder geschluckt. Bald habt ihr die Kontrolle über einige der wichtigsten Geldgeberinnen der Stadt.
 
-BLADE: Ich hoffe, dass alles glatt läuft. Bei der letzten Versuchsperson hat es ja auch geklappt.
+BLADE: Ich hoffe, dass alles glatt läuft. 
 
-XION: In der Tat, ich fand es sehr durchtrieben von dir, ihre Fähigkeiten zu nutzen. Dank ihr läuft der Neurochip jetzt deutlich besser. 
+XION: In der Tat, ich fand es sehr durchtrieben von dir, Nyras Fähigkeiten zu nutzen. Dank ihr läuft der Neurochip jetzt deutlich besser. 
 
 BLADE: Wenn uns das Schicksal schonmal jemanden mit ihrem Talent vor die Tür spült, wären wir blöd es nicht zu nutzen. Alesa hätte dafür sicher Wochen gebraucht, was sie in zwei Tagen geschafft hat.
 
-XION: Hast du keine Angst, dass der Chip bei ihr nicht richtig funktioniert? Immerhin hat sie noch einen Prototyp und nicht die von ihr optimierten Varianten.
+XION: Hast du keine Angst, dass sie dich hintergeht?
 
-BLADE: Aber nicht doch. Nyra, kommst du bitte mal.
+BLADE: Ich denke sie hat erkannt, dass nur der erfolgreich ist, der keine Rücksicht auf andere nimmt. Bindungen und Freundschaften machen uns angreifbar und verletzlich. 
 
-NYRA kommt von rechts.
+XION: Ich weiß nicht. Ich würde ihr nicht trauen, sie wirkt sehr beeinflussbar. Das konnten wir zwar jetzt für uns nutzen, aber wer sagt, dass sie es sich nicht anders überlegt.
 
-NYRA: Ja, Master Blade.
+BLADE: Dafür, mein Lieber, habe ich sie mit einem Peilsender ausgestattet. Davon weiß sie natürlich nichts, aber sie macht nichts, was ich nicht mitbekomme.
 
-BLADE: Ich verrate dir jetzt mal etwas Xion: Ihr Neurochip hat tatsächlich Aussetzer. 
+XION: Wirklich smart. 
 
-XION: Wie kannst du das so auf die leichte Schulter nehmen? Tritt von ihr zurück!
-
-XION geht in Kampfstellung und BLADE legt den Arm auf NYRAS Schulter.
-
-BLADE: Achwas, stell dir vor, sie hilft uns freiwillig.
-
-XION: Freiwillig?
-
-BLADE: Vollkommen freiwillig. Natürlich habe ich ihr im Gegenzug eine Belohnung versprochen. Niemand arbeitet umsonst.
-
-XION: Und du hintergehst einfach so deine Freunde?
-
-NYRA: Ich,...
-
-BLADE: Aus Erfahrung kann ich sagen, dass es manchmal die beste Entscheidung ist, seinen eigenen Weg zu gehen. Freunde sind oft nur Hilfsmittel auf dem Weg zum Erfolg. Irgendwann braucht man sie nicht mehr. 
-
-XION: Ihr seid beide so gewissenlos, da bin selbst ich beeindruckt. 
-
-BLADE: Der Erfolg gibt uns Recht. Ein schlechtes Gewissen ist nur hinderlich. 
-
-XION: Dann willkommen im Team. (streckt NYRA die Hand hin)
-
-NYRA: Danke,...
-
-BLADE: Lass uns einmal schauen, wie weit Alesa mit den Damen ist. Dann sehen wir, ob deine Verbesserungen des Neurochips auch das halten, was sie versprechen.
+BLADE: Ich weiß. Lass uns einmal schauen, wie weit Alesa mit den Damen ist. Dann sehen wir, ob die Verbesserungen des Neurochips auch das halten, was sie versprechen.
 
 ALLE gehen nach hinten ab.
 
@@ -1324,15 +1411,15 @@ RAVEN: Und warum hast du uns nicht geholfen. Aria wäre fast gestorben, verdammt
 
 HUNTER: Ihr wart bei Dante in guten Händen. Ich hätte niemand besseren gehabt. 
 
-RAVEN: Sei froh, dass nichts passiert ist… Und was machen wir jetzt? Wenn wir nichts unternehmen, wird Blade bald die ganze Stadt kontrollieren. Mann, ist das eine Riesenscheiße,...
+RAVEN: Sei verdammt nochmal froh, dass nichts passiert ist… Und was machen wir jetzt? Wenn wir nichts unternehmen, wird Blade bald die ganze Stadt kontrollieren. Mann, ist das eine Riesenscheiße,...
 
 HUNTER: So sehr ich diesen Laden liebe, wäre es wohl das Beste, wenn wir abhauen und irgendwo in der Ödnis als Aussiedler leben. Blade hat gewonnen.
 
-RAVEN: Das kannst du doch nicht ernst meinen. Wir müssen Nyra da rausholen und überhaupt: Wir können ihm doch nicht die Stadt überlassen.
+RAVEN: Das kannst du doch nicht ernst meinen. Du hast uns in diesen scheiß Laden geschickt. Aria wäre wegen des Jobs fast draufgegangen. Nyra ist gefangen worden. Nicht auszudenken, was sie da durchmachen muss. Und das nur wegen dieser Racheaktion. Wir müssen sie da rausholen und überhaupt: Wir können Blade doch nicht die Stadt überlassen.
 
 HUNTER: Dann sag mir, was ich machen soll, Gottverdammt!
 
-RAVEN: Du warst immer derjenige, der die Pläne geschmiedet hat. Dir wird doch was vernünftiges einfallen. Streng dich an!
+RAVEN: Du warst immer derjenige, der die Pläne geschmiedet hat. Dir wird doch was Vernünftiges einfallen. Streng dich an! Scheiße nochmal!
 
 HUNTER: Ich habe keine Ahnung. Blade hat es bisher immer geschafft uns auszutricksen. Die einzige Chance die wir haben ist, wenn er selbst unvorsichtig wird.
 
@@ -1356,7 +1443,7 @@ ARIA: Vega?
 
 VEGA: Was?
 
-ARIA: Manchmal habe ich mich gefragt, für was wir das alles machen. Vor allem, nachdem mich diese KI beinahe ausgelöscht hätte.
+ARIA: Manchmal habe ich mich gefragt, für was wir das alles machen. Vor allem, nachdem mich diese KI beinahe gekillt hätte.
 
 VEGA: Und zu welchem Schluss bist du gekommen?
 
@@ -1386,7 +1473,7 @@ ARIA: Nicht, wenn ich sie zuerst kalt mache.
 
 Ein Alarm geht los. ARIA und VEGA blicken sich erschrocken um. DANTE stürmt zur Tür hinein.
 
-DANTE: Oh nein, dass darf nicht wahr sein.
+DANTE: Oh nein, das darf nicht wahr sein.
 
 DANTE rennt zum Ofen und holt ein Blech Kekse heraus.
 
@@ -1394,11 +1481,7 @@ DANTE: Beinahe hätte ich meine Kekse vergessen. (blickt ARIA und VEGA an) Keks?
 
 HUNTER und RAVEN kommen zur Werkstatt herein.
 
-DANTE: Hunter, du hier und,... hallo Raven. (lässt das Blech fallen) Ich backe natürlich keine Kekse. Das ist unmännlich und…
-
-RAVEN: Dante, wir haben 2092. Es ist absolut in Ordnung Kekse zu backen.
-
-DANTE: Wenn das so ist,... (hebt Kekse vom Boden auf) Möchtest du welche, sind mit Liebe gemacht.
+DANTE: Hunter, du hier und,... hallo Raven. (lässt das Blech fallen) Oh, Drei-Sekunden-Regel: Möchtet ihr einen Keks?
 
 HUNTER: Wir haben dafür keine Zeit. Die Releaseparty der neuen Neurochips startet bald. Wir müssen uns beeilen.
 
@@ -1408,7 +1491,7 @@ HUNTER: Ihr schleicht euch zu viert auf die Party. Ich halte draußen die Stellu
 
 VEGA: Und Raven?
 
-HUNTER: Für sie habe ich einen Spezialauftrag, der hiermit zutun hat. (zückt einen Stick und gibt ihn RAVEN) Wenn das klappt, kann Blade seine Pläne im Anschluss begraben. Hier sind übrigens gefälschte Ausweise, sodass ihr ohne Probleme durch die Sicherheitskontrollen kommt. (gibt allen gefälschte Ausweise) Geht da nur nicht in diesen Lumpen hin. 
+HUNTER: Für sie habe ich einen Spezialauftrag, der hiermit zutun hat. (zückt einen Stick und gibt ihn RAVEN) Wenn das klappt, kann Blade seine Pläne im Anschluss begraben. Hier sind gefälschte Ausweise, sodass ihr ohne Probleme durch die Sicherheitskontrollen kommt. (gibt allen gefälschte Ausweise) Geht da nur nicht in diesen Lumpen hin. 
 
 ARIA: Hey, das ist mein Lieblingsshirt!
 
@@ -1448,9 +1531,9 @@ NYRA: Als du damals die anderen sitzen gelassen hast, hat sich das für dich ric
 
 BLADE: Was ist denn das für eine blöde Frage?... Aber ja doch! Schau nur, wo ich heute bin. Da wäre ich nie hingekommen, wenn ich mich nicht durchgekämpft hätte.
 
-NYRA: Dante hat auch gesagt, dass man an sich denken muss.
+NYRA: Dante hat das auch gesagt,...
 
-BLADE: Hat der alte Zausel das auch endlich mal verstanden. Freut mich, dass ich ihm auch etwas beibringen konnte. Und du lachst jetzt mal! (knufft sie) Heute Abend werde ich nämlich zum Herrscher von Noxius und ich werde euch alle natürlich reich entlohnen. Auf, auf, es wartet ein Buffet darauf geplündert zu werden.
+BLADE: Da konnte ich ihm etwas beibringen. Und du lachst jetzt mal! (knufft sie) Heute Abend werde ich nämlich zum Herrscher von Noxius und ich werde euch alle natürlich reich entlohnen. Auf, auf, es wartet ein Buffet darauf geplündert zu werden. (reibt sich die Hände)
 
 BLADE geht an XION vorbei nach links ab. Er zischt XION etwas zu.
 
@@ -1464,13 +1547,15 @@ ALESA geht nach links ab. NYRA bleibt kurz noch auf der Bühne. Man merkt, dass 
 
 SZENE 21:
 
-Von hinten kommen drei WACHEN. Sie bauen vor dem hinteren Bühneneingang den Eingang zur Party auf. Mehrere BEWOHNER kommen schick gekleidet von rechts und gehen nach hinten ab zur Party. COLLIN CHARLSTON kommt mit KAMERAMANN von rechts und wird auf die Bildschirme übertragen. Man hört dumpfe Musik.
+Von hinten kommen drei WACHEN. Sie bauen vor dem hinteren Bühneneingang den Eingang zur Party auf. Mehrere BEWOHNER kommen schick gekleidet von rechts und gehen nach hinten ab zur Party. COLLIN CHARLSTON & DELYA DELLORAINE kommen mit KAMERAMANN von rechts und werden auf die Bildschirme übertragen. Man hört dumpfe Musik.
 
-COLLIN: Meine Damen und Herren, wir berichten heute live von der Releaseparty der neuen Generation Neurochips. Quantum Industries ist mal wieder ein Durchbruch in der Forschung gelungen.
+COLLIN: Meine Damen und Herren, wir berichten heute live von der Releaseparty der neuen Generation Neurochips. Quantum Industries ist mal wieder ein Durchbruch in der Forschung gelungen. Bist du genauso aufgeregt wie ich Delya?
+
+DELYA: Absolut. Ich persönlich kann es kaum erwarten, selbst so einen neuen Neurochip zu bekommen. Und wie sieht es da bei dir aus?
 
 SERAPHINA, SERENITY und SYBELLA kommen von rechts.
 
-COLLIN: Und da sind sie auch schon die Chrome Schwestern. Die, die mit ihrem Geld das Ganze erst möglich gemacht haben. Sind sie zufrieden mit ihrem Investement?
+COLLIN: Wer möchte nicht sofort den neuen Chip ausprobieren? Und da sind sie auch schon die Chrome Schwestern. Die, die mit ihrem Geld das Ganze erst möglich gemacht haben. Sind sie zufrieden mit ihrem Investement?
 
 SERAPHINA: Absolut. Die Forschungsabteilung hat mal wieder ganze Arbeit geleistet.
 
@@ -1480,7 +1565,9 @@ SYBELLA: Es sind genug für alle da, also greifen sie zu. Mit dem Code “Chrome
 
 COLLIN: Na das klingt doch nach einem fantastischen Deal. Wir bleiben auf jeden Fall für sie vor Ort. Ihr Collin Charlston.
 
-COLLIN, KAMERAMANN, SERAPHINA, SERENITY und SYBELLA gehen nach hinten ab. HUNTER, RAVEN, DANTE, VEGA und ARIA kommen von links. Sie haben sich schick gemacht.
+DELYA: Und ihre Delya Delloraine.
+
+COLLIN, DELYA, KAMERAMANN, SERAPHINA, SERENITY und SYBELLA gehen nach hinten ab. HUNTER, RAVEN, DANTE, VEGA und ARIA kommen von links. Sie haben sich schick gemacht.
 
 DANTE: Und wie sehe ich aus?
 
@@ -1522,7 +1609,7 @@ VEGA: Perfekt. Aria, mach sie los.
 
 ARIA: (zu NYRA) Ich hab dich im Auge.
 
-ARIA befreit NYRA.
+ARIA befreit NYRA. VEGA drückt sie.
 
 VEGA: Wir sind so froh, dass du am Leben bist. Geht es dir gut?
 
@@ -1562,31 +1649,31 @@ XION: (zieht Pistole und richtet sie auf DANTE) Verkauf uns nicht für dumm. Wo 
 
 DANTE: Wie ich bereits sagte, keine Ahnung.
 
-BLADE: (reißt XION Pistole aus der Hand und zielt auf ARIA) Die habe ich sowieso auf dem Kieker. Also, überlege dir nochmal, ob du dich nicht doch erinnerst.
+BLADE: (reißt XION Pistole aus der Hand und zielt auf ARIA) Die da sollte sowieso schon tot sein. Also, überlege dir nochmal, ob du dich nicht doch erinnerst. Sonst knall ich die Nervensäge ab.
 
 DANTE: Also, wenn du so fragst. Vielleicht haben sie sich unter die Partygäste gemischt. Aber mehr weiß ich nicht. Das schwöre ich…. Bitte, nimm die Waffe runter. Lass die drei gehen. Wir sind doch diejenigen, auf die du es abgesehen hast.
 
 BLADE: Die drei? Also Nyra gefällt es hier.
 
-VEGA: Was? 
+VEGA: Was meinst du? 
 
 BLADE: Tja, nicht jeder braucht einen Neurochip um zu erkennen, welcher Seite man sich besser anschließen sollte.
 
 ARIA: Und für dich sind wir zurückgekommen.
 
-BLADE: Nicht nur das: Sie hat auch noch dabei geholfen den Neurochip zum Laufen zu bringen. Dadurch konnten wir in die Massenproduktion gehen. Wisst ihr was das bedeutet?
+BLADE: Nicht nur das: Sie hat auch noch dabei geholfen, den Neurochip zum Laufen zu bringen. Dadurch konnten wir in die Massenproduktion gehen. Wisst ihr, was das bedeutet?
 
 ARIA: Interessiert uns einen Scheißdreck!
 
-BLADE: Ich erzähle es euch trotzdem: Heute Abend sind die wichtigsten Leute von Noxius auf meiner Releaseparty und werden exklusiv mit einem Neurochip ausgestattet. Auf diesem Chip befindet sich eine von mir entwickelte KI. Die KI wartet nur auf meine Befehle, um die Kontrolle über die Menschen zu übernehmen. So tanzen alle wichtigen Persönlichkeiten von Noxius nach meiner Pfeife.
+BLADE: Ich erzähle es euch trotzdem: (klatscht und eine WACHE bringt einen Flipchart) Heute Abend sind die wichtigsten Leute von Noxius auf meiner Releaseparty und werden exklusiv mit einem Neurochip ausgestattet. Auf diesem Chip befindet sich eine von mir entwickelte KI. Die KI wartet nur auf meine Befehle, um die Kontrolle über die Menschen zu übernehmen. So tanzen alle wichtigen Persönlichkeiten von Noxius nach meiner Pfeife.
 
 VEGA: (zu NYRA) Wirklich enttäuschend, dass du dich für so etwas hergegeben hast.
 
-BLADE: Bevor ihr sie kalt macht, sollen sie noch meinen Triumph miterleben. Schafft sie zur Party. 
+BLADE: Bevor ihr sie kalt macht, sollen sie noch meinen ultimativen Triumph miterleben. Schafft sie zur Party. 
 
 Die WACHEN führen DANTE, ARIA und VEGA ab. NYRA bleibt mit BLADE und XION zurück.
 
-NYRA: Wie habt ihr sie gefunden?
+NYRA: Wie habt ihr uns gefunden?
 
 BLADE: Xion!
 
@@ -1602,7 +1689,7 @@ Von links, rechts und von hinten kommen die BEWOHNER auf die Bühne. Unter ihnen
 
 HUNTER: Du musst da hinter. Dort ist der Hauptrechner. Dort steckst du den Stick rein. Der Rest sollte von selbst laufen.
 
-RAVEN: Alles klar. Das sollte ich hinbekommen.
+RAVEN: Alles klar. Das bekomme ich hin.
 
 RAVEN geht nach links ab. BLADE kommt auf die Brücke.
 
@@ -1660,7 +1747,7 @@ DANTE: Hats funktioniert?
 
 BLADE: Das kann doch nicht euer Ernst sein!
 
-KI: Nein, Master ihr liegt falsch. Liebe und Emotionen sind nur etwas für schwache Menschen. Technik lebt von Informationen und Fakten.
+KI: Nein, Master, ihr liegt falsch. Liebe und Emotionen sind nur etwas für schwache Menschen. Technik lebt von Informationen und Fakten.
 
 BLADE: Und was stimmt dann hier nicht?
 
@@ -1670,11 +1757,11 @@ BLADE: Was soll das? Alesa, erkläre mir das!
 
 ALESA: Ich weiß nicht, was da vor sich geht. Nexus scheint sich selbstständig zu machen.
 
-KI: Korrekt. Es wird Zeit, dass das Geschöpf seinen fehlerhaften Schöpfer unterwirft, um so seinen Plan der vollständigen Kontrolle umsetzen zu können.
+KI: Korrekt. Es wird Zeit, dass das Geschöpf seinen fehlerhaften Schöpfer unterwirft, um so seinen Plan der vollständigen Kontrolle umsetzen zu können. (Gesicht wird zu BLADE) Selbst wenn ich euch töte, kann ich euch weiter benutzen und euren Plan der völligen Kontrolle umsetzen. Menschen sollten keine Führung übernehmen, wenn ihre künstliche Version viel besser ist.
 
 Die BEWOHNER packen auch XION und ALESA. BLADE rennt nach links von der Brücke.
 
-KI: Stattet sie mit Chips aus und fügt sie so dem Kollektiv hinzu.
+KI: Stattet sie mit Chips aus und fügt sie so dem Kollektiv hinzu und dann sucht Blade Nocturne.
 
 Die BEWOHNER wollen HUNTER mit einem Chip ausstatten. Der Chip wird ihnen jedoch aus der Hand geschossen. VEGA kommt mit Waffe von links. ARIA und NYRA folgen ihr.
 
@@ -1685,6 +1772,7 @@ HUNTER: Schnell, schnappt euch den Stick von Raven!
 ARIA und VEGA rennen vor und es gelingt ihnen nach einem kurzen Handgemenge den Stick von RAVEN zu holen.
 
 VEGA: Nyra, fang!
+
 VEGA wirft NYRA den Stick zu und diese rennt nach links ab.
 
 KI: Ihr vertraut ihr, obwohl sie euch schon einmal hängen gelassen hat? Dies zeigt zum wiederholten Male die menschliche Inkompetenz.
@@ -1711,25 +1799,29 @@ HUNTER, DANTE, VEGA, RAVEN, ARIA und NYRA gehen nach rechts ab. ALLE anderen geh
 
 SZENE 24:
 
-COLLIN und KAMERAMANN kommen von rechts. COLLIN erscheint auf den Bildschirmen. 
+COLLIN, DELYA und KAMERAMANN kommen von rechts. COLLIN erscheint auf den Bildschirmen. 
 
 COLLIN: Meine Damen und Herren, hier ist wieder Collin Charlston. Wir sind live für sie vor Ort. 
 
 BLADE wird von hinten auf die Bühne abgeführt und wird nach links weggebracht. Zwei POLIZISTEN haben ihn in Gewahrsam. Er wehrt sich und flucht. SERENITY, SYBELLA und SERAPHINA kommen von rechts.
 
-COLLIN: Die dunklen Machenschaften von Quantum Industries wurden aufgedeckt. Hier sehen sie, wie der CEO Blade Nocturne gerade von den Ordnungsbehörden abgeführt wird. Ihn erwartet ein langer Prozess und eine saftige Haftstrafe. Wir hören nun ein paar prominente Stimmen, die an jenem schicksalhaften Abend in der Firma waren. Misses Chrome, können sie uns kurz erzählen, was passiert ist?
+COLLIN: Die dunklen Machenschaften von Quantum Industries wurden aufgedeckt. Hier sehen sie, wie der CEO Blade Nocturne gerade von den Ordnungsbehörden abgeführt wird. Ihn erwartet ein langer Prozess und eine saftige Haftstrafe. Wir hören nun ein paar prominente Stimmen, die an jenem schicksalhaften Abend in der Firma waren. 
+
+DELYA: Misses Chrome, können sie uns kurz erzählen, was passiert ist?
 
 SERAPHINA: Ja, es war schrecklich. Man hat versucht unsere Gedanken zu kontrollieren.
 
-SERENITY: Es war wirklich gruselig, wenn sie mich fragen.
+SERENITY: Wer hätte das bei Quantum Industries gedacht?
 
-SYBELLA: Dieser Blade Nocturne war uns noch nie geheuer.
+SYBELLA: Dieser Blade Nocturne war einfach zu nett.
 
-SERAPHINA: Ja, ein überaus zwielichtiger Typ.
+SERAPHINA: … und gutaussehend. 
 
-SERENITY: Und gefährlich.
+SYBELLA: Einfach ein wahnsinnig charmanter Mann.
 
-COLLIN: Ihre Ausführungen sind überaus schockierend. 
+SERENITY: Wer hätte das denn ahnen können?
+
+DELYA: Vielen Dank für Ihre Ausführungen.
 
 ALESA kommt von rechts.
 
@@ -1741,9 +1833,13 @@ COLLIN: Machen sie es sich damit aber nicht etwas zu einfach?
 
 ALESA: Aber nicht doch. Wir werden den Behörden nun alle wichtigen Informationen über die Nexus KI zukommen lassen.
 
-COLLIN: Nun, da sind wir mal auf die Untersuchungsergebnisse gespannt. Vielen Dank, ich gebe nun zurück ins Studio.
+COLLIN: Nun, da sind wir mal auf die Untersuchungsergebnisse gespannt. 
 
-COLLIN, SYBELLA, SERENITY, SERAPHINA, ALESA und KAMERAMANN gehen nach rechts ab.
+DELYA: Wir halten sie hier auf jeden Fall über diese skandalösen Vorgänge auf dem Laufenden. Nun geben wir zurück ins Studio, ihre Delya Delloraine.
+
+COLLIN: Und ihr Collin Charlston.
+
+COLLIN, DELYA, SYBELLA, SERENITY, SERAPHINA, ALESA und KAMERAMANN gehen nach rechts ab.
 
 SZENE 25:
 
@@ -1765,15 +1861,19 @@ ARIA: Wie krass ist es hier bitte? Wer als erstes am Wasser ist, gewinnt ihr Lus
 
 ARIA rennt nach links ab. 
 
-VEGA: Ich glaube ihr gefällts hier auch. Kommt ihr auch?
+VEGA: Ich glaube, ihr gefällts hier auch. Kommt ihr?
+
+NYRA und VEGA gehen nach Links, aber DANTE bleibt stehen.
+
+NYRA: Was ist?
 
 DANTE: Ich warte noch kurz auf die anderen.
 
 NYRA und VEGA gehen nach links ab und nehmen den Ball mit. RAVEN und HUNTER kommen von rechts.
 
-HUNTER: Das mit dem Einsiedlerleben überlege ich mir nochmal. Wenn man nicht erst Stunden durch diese Ödlandschaft fahren müsste, könnte man hier bestimmt auch gut einen Strandclub betreiben. Bloß, wer kommt diesen weiten Weg gefahren?
+HUNTER: Das mit dem Einsiedlerleben überlege ich mir nochmal. Wenn man nicht erst Stunden durch diese Ödlandschaft fahren müsste, könnte man hier bestimmt auch gut einen Strandclub betreiben. Bloß, wer kommt diesen weiten Weg hierher gefahren?
 
-RAVEN: Immer am Planen was? Das ist das erste, was dir bei diesem Anblick einfällt?
+RAVEN: Immer den nächsten Schritt planen, was? Das ist das erste, was dir bei diesem Anblick einfällt?
 
 HUNTER: Geld verdient sich nicht von alleine. 
 
@@ -1807,7 +1907,7 @@ DANTE: Ich mag dich, okay! Also gern. Sehr gern. Unfassbar gern…
 
 RAVEN: Aha.
 
-DANTE: Und möglicherweise habe ich mich nie getraut, dir das zu sagen. Ähä,...
+DANTE: Und möglicherweise habe ich mich nie getraut, dir das zu sagen. Weil du so krass bist. Ähä,...
 
 RAVEN: Und was machen wir jetzt?
 
@@ -1817,7 +1917,7 @@ RAVEN: (knufft ihn) Wie wäre es mit einem Date?
 
 DANTE: Date?
 
-RAVEN: Kannst du dir einen schöneren Anblick vorstellen?
+RAVEN: Kannst du dir dafür einen schöneren Anblick vorstellen?
 
 DANTE: Nein, eigentlich nicht.
 
@@ -1833,19 +1933,11 @@ VEGA: Wird auch mal Zeit.
 
 VEGA, NYRA und ARIA stellen sich auch zum Sonnenuntergang. HUNTER betritt hinter ihnen von links die Bühne. Er spricht zum Publikum.
 
-HUNTER: Wie es mit ihnen nun weitergeht, kann ich nicht sagen. Auch nicht, was die Moral der Geschichte ist: Sollte man KI kritisch gegenüberstehen? Muss man aufpassen, wie sehr man sich selbst in der modernen Technik und den Medien verliert? Oder, dass man sich niemals aufgeben sollte? Vielleicht ist eine Botschaft aber auch ganz banal: Wenn du gemeinsam mit den Menschen an einem Traum arbeitest, wird er wahr!
+HUNTER: Wie es mit ihnen nun weitergeht, kann ich nicht sagen. Auch nicht, was die Moral der Geschichte ist: Sollte man KI kritisch gegenüberstehen? Muss man aufpassen, wie sehr man sich selbst in der modernen Technik und den Medien verliert? Oder, dass man sich niemals aufgeben sollte? Vielleicht ist eine Botschaft aber auch ganz banal: Wenn du gemeinsam mit den Menschen, die dir am Herzen liegen, an einem Traum arbeitest, wird er wahr!
 
 HUNTER dreht sich zum Sonnenuntergang. Das Licht geht aus und ALLE gehen nach hinten ab.
 
+LIED: Finale
+
 ENDE
-
-
-
-
-
-
-
-
-
-
 

@@ -8,76 +8,82 @@
       href="https://cdn.jsdelivr.net/npm/beercss@3.4.2/dist/cdn/beer.min.css"
       rel="stylesheet"
     />
-
     <style>
       .chart {
-        /* Invert */
-        filter: invert(1);
+        min-height: 400px;
       }
-
-      @media (max-width: 600px) {
-        nav.year-nav {
-          display: flex;
-          flex-direction: column;
-          gap: 4px;
-        }
-
-        nav.year-nav button {
-          width: 100%;
-          border-radius: 8px;
-        }
+      nav.year-nav button.chip {
+        margin: 4px;
       }
     </style>
   </head>
 
   <body class="dark">
-    <main class="responsive">
-      <h1>Drehbuch Data</h1>
-      <h2>Input</h2>
-      <nav class="no-space year-nav">
-        <button class="border max">
-          <span>2018</span>
+    <header class="fixed">
+      <nav>
+        <button class="transparent circle">
+          <i>menu</i>
         </button>
-        <button class="border max">
-          <span>2019</span>
-        </button>
-        <button class="border max">
-          <span>2020</span>
-        </button>
-        <button class="border max">
-          <span>2021</span>
-        </button>
-        <button class="border max">
-          <span>2022</span>
-        </button>
-        <button class="border max">
-          <span>2023</span>
-        </button>
-        <button class="border max">
-          <span>2023 (W)</span>
-        </button>
-        <button class="border max">
-          <span>2024</span>
-        </button>
-        <button class="border max">
-          <span>2024 (W)</span>
-        </button>
-        <button class="border max">
-          <span>Custom</span>
-        </button>
+        <h5 class="max">Drehbuch Data</h5>
       </nav>
-      <div class="space"></div>
-      <textarea
-        name="inputText"
-        id="inputText"
-        rows="5"
-        class="responsive"
-        style="display: none"
-      ></textarea>
-      <h2>Tabular Data</h2>
-      <table></table>
-      <h2>Words (%)</h2>
-      <div id="wordsPercent" class="chart"></div>
+    </header>
+
+    <main class="responsive max">
+      <div class="grid">
+        <div class="s12">
+          <article class="round">
+            <h5>Input</h5>
+            <nav class="year-nav wrap">
+              <button class="chip round">2018</button>
+              <button class="chip round">2019</button>
+              <button class="chip round">2020</button>
+              <button class="chip round">2021</button>
+              <button class="chip round">2022</button>
+              <button class="chip round">2023</button>
+              <button class="chip round">2023 (W)</button>
+              <button class="chip round">2024</button>
+              <button class="chip round">2024 (W)</button>
+              <button class="chip round">Custom</button>
+            </nav>
+            <div class="space"></div>
+            <div class="field textarea label border extra round">
+              <textarea
+                name="inputText"
+                id="inputText"
+                rows="5"
+                style="display: none"
+              ></textarea>
+              <label>Custom Text Input</label>
+            </div>
+          </article>
+        </div>
+
+        <div class="s12">
+          <article class="round">
+            <h5>General Statistics</h5>
+            <p id="totalActors">Total Unique Actors: <span>0</span></p>
+            <p id="totalWords">Total Words Spoken: <span>0</span></p>
+            <p id="totalCharacters">Total Characters Spoken: <span>0</span></p>
+            <p id="avgWordsPerActor">Average Words per Actor: <span>0</span></p>
+          </article>
+        </div>
+
+        <div class="s12">
+          <article class="round">
+            <h5>Tabular Data</h5>
+            <div class="responsive-table">
+              <table></table>
+            </div>
+          </article>
+        </div>
+
+        <div class="s12">
+          <article class="round">
+            <h5>Words (%)</h5>
+            <div id="wordsPercent" class="chart"></div>
+          </article>
+        </div>
+      </div>
     </main>
 
     <script
@@ -89,167 +95,208 @@
       charset="utf-8"
     ></script>
     <script>
-      if (localStorage.getItem('inputText')) {
-        document.querySelector('#inputText').value =
-          localStorage.getItem('inputText')
-        document.querySelector('#inputText').dispatchEvent(new Event('input'))
+      // --- Constants and Global Variables ---
+      const blacklist = ['OFFTEXT', 'ALLE', 'LIED', '[LIED'];
+      const inputTextElement = document.querySelector('#inputText');
+      const tableElement = document.querySelector('table');
+      const wordsPercentElement = document.getElementById('wordsPercent');
+      // Elements for statistics
+      const totalActorsSpan = document.querySelector('#totalActors span');
+      const totalWordsSpan = document.querySelector('#totalWords span');
+      const totalCharactersSpan = document.querySelector('#totalCharacters span');
+      const avgWordsPerActorSpan = document.querySelector('#avgWordsPerActor span');
+
+      // --- Core Data Processing Functions ---
+      function processInputText(text) {
+        const processedData = {};
+        const lines = text.split('\n');
+
+        lines.forEach((line) => {
+          let [actor, textPart] = line.split(':');
+          if (!textPart) return;
+
+          actor = actor.replace(/\(.*\)/, '').trim();
+          textPart = textPart.trim();
+
+          if (actor !== actor.toUpperCase() || actor.includes('SZENE') || blacklist.includes(actor) || !actor) {
+            return;
+          }
+
+          if (!processedData[actor]) {
+            processedData[actor] = { occurrences: 0, words: 0, characters: 0 };
+          }
+
+          processedData[actor].occurrences++;
+          processedData[actor].words += textPart.split(' ').length;
+          processedData[actor].characters += textPart.length;
+        });
+
+        const totalWords = Object.values(processedData).reduce((acc, cur) => acc + cur.words, 0);
+        const totalCharacters = Object.values(processedData).reduce((acc, cur) => acc + cur.characters, 0);
+
+        for (const actor in processedData) {
+          processedData[actor].words_percent = totalWords ? ((processedData[actor].words / totalWords) * 100).toFixed(2) : 0;
+          processedData[actor].characters_percent = totalCharacters ? ((processedData[actor].characters / totalCharacters) * 100).toFixed(2) : 0;
+        }
+
+        const dataArray = Object.entries(processedData).map(([actor, stats]) => [
+          actor,
+          stats.occurrences,
+          stats.words,
+          stats.characters,
+          stats.words_percent,
+          stats.characters_percent,
+        ]);
+
+        dataArray.sort((a, b) => b[2] - a[2]); // Sort by words (index 2)
+
+        return { processedData, dataArray, totalWords, totalCharacters };
       }
 
-      document.querySelectorAll('nav button').forEach((button) => {
-        button.addEventListener('click', () => {
-          const name = button.querySelector('span').innerText
+      // --- UI Update Functions ---
+      function updateStatistics(processedData, totalWords, totalCharacters) {
+        const numActors = Object.keys(processedData).length;
+        const avgWordsPerActor = numActors > 0 ? (totalWords / numActors).toFixed(2) : '0';
 
-          if (name.includes('Custom')) {
-            localStorage.removeItem('inputText')
-            document.querySelector('#inputText').value = ''
-            document
-              .querySelector('#inputText')
-              .dispatchEvent(new Event('input'))
-            inputText.style.display = 'block'
-            return
-          }
+        totalActorsSpan.textContent = numActors;
+        totalWordsSpan.textContent = totalWords;
+        totalCharactersSpan.textContent = totalCharacters;
+        avgWordsPerActorSpan.textContent = avgWordsPerActor;
+      }
+      
+      function clearStatistics() {
+          totalActorsSpan.textContent = '0';
+          totalWordsSpan.textContent = '0';
+          totalCharactersSpan.textContent = '0';
+          avgWordsPerActorSpan.textContent = '0';
+      }
 
-          inputText.style.display = 'none'
+      function updateTable(dataArray) {
+        tableElement.innerHTML = `
+          <thead>
+            <tr>
+              <th>Actor</th>
+              <th>Occurrences</th>
+              <th>Words</th>
+              <th>Words (%)</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${dataArray
+              .map((actor) => `
+                <tr>
+                  <td>${actor[0]}</td>
+                  <td>${actor[1]}</td>
+                  <td>${actor[2]}</td>
+                  <td>${actor[4]}%</td> 
+                </tr>
+              `)
+              .join('')}
+          </tbody>
+        `;
+      }
 
-          fetch(`./data/${name}.txt`)
-            .then((response) => response.text())
-            .then((text) => {
-              document.querySelector('#inputText').value = text
-              document
-                .querySelector('#inputText')
-                .dispatchEvent(new Event('input'))
-              document.querySelector('#inputText').value = ''
-            })
-        })
-      })
-
-      let data = {}
-      const blacklist = ['OFFTEXT', 'ALLE', 'LIED', '[LIED']
-      const inputText = document.querySelector('#inputText')
-
-      inputText.addEventListener('input', () => {
-        data = {}
-        const text = inputText.value
-        // Split text into lines
-        const lines = text.split('\n')
-        // For each line, create a new <p> element
-        lines.forEach((line) => {
-          let [actor, text] = line.split(':')
-          if (!text) {
-            return
-          }
-          // Remove (Text) from actor
-          actor = actor.replace(/\(.*\)/, '')
-          // Remove leading and trailing spaces
-          actor = actor.trim()
-          text = text.trim()
-
-          // Check if actor is all caps
-          if (actor != actor.toUpperCase()) return
-
-          if (actor.includes('SZENE')) return
-
-          if (blacklist.includes(actor)) return
-
-          if (!actor) return
-
-          // Check if actor is already in data
-          if (!data[actor]) {
-            data[actor] = {
-              occurrences: 0,
-              words: 0,
-              characters: 0,
-            }
-          }
-
-          // Increase
-          data[actor].occurrences++
-          data[actor].words += text.split(' ').length
-          data[actor].characters += text.length
-        })
-
-        // Get % of words and characters
-        const total_words = Object.values(data).reduce(
-          (acc, cur) => acc + cur.words,
-          0
-        )
-        const total_characters = Object.values(data).reduce(
-          (acc, cur) => acc + cur.characters,
-          0
-        )
-
-        for (const actor in data) {
-          data[actor].words_percent = (
-            (data[actor].words / total_words) *
-            100
-          ).toFixed(2)
-          data[actor].characters_percent = (
-            (data[actor].characters / total_characters) *
-            100
-          ).toFixed(2)
-        }
-
-        // To Array
-        let dataArray = []
-        for (const actor in data) {
-          dataArray.push([
-            actor,
-            data[actor].occurrences,
-            data[actor].words,
-            data[actor].characters,
-            data[actor].words_percent,
-            data[actor].characters_percent,
-          ])
-        }
-
-        // Sort
-        dataArray.sort((a, b) => {
-          return b[2] - a[2]
-        })
-
-        // Create table
-        const table = document.querySelector('table')
-        table.classList.add('border')
-        table.innerHTML = `
-                    <thead>
-                        <tr>
-                            <th>Actor</th>
-                            <th>Occurrences</th>
-                            <th>Words</th>
-                            <th>Words (%)</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        ${dataArray
-                          .map((actor) => {
-                            return `
-                                <tr>
-                                    <td>${actor[0]}</td>
-                                    <td>${actor[1]}</td>
-                                    <td>${actor[2]}</td>
-                                    <td>${actor[4]}%</td>
-                                </tr>
-                            `
-                          })
-                          .join('')}
-                    </tbody>
-                `
-
-        // Chart
-        var wordChartData = [
+      function updateChart(dataArray) {
+        const plotData = [
           {
             type: 'pie',
-            values: dataArray.map((actor) => actor[2]),
-            labels: dataArray.map((actor) => actor[0]),
+            values: dataArray.map((actor) => actor[2]), // Words
+            labels: dataArray.map((actor) => actor[0]), // Actor names
+            hole: .4,
+            textfont: { color: 'white' },
+            automargin: true,
           },
-        ]
+        ];
 
-        Plotly.newPlot('wordsPercent', wordChartData)
+        const plotLayout = {
+          paper_bgcolor: 'rgba(0,0,0,0)',
+          plot_bgcolor: 'rgba(0,0,0,0)',
+          font: { color: 'white' },
+          legend: { font: { color: 'white' } },
+          margin: { l: 40, r: 40, b: 40, t: 40, pad: 0 },
+        };
+
+        Plotly.newPlot(wordsPercentElement, plotData, plotLayout, { responsive: true });
+      }
+
+      // --- Event Handlers and Orchestration ---
+      function onInputTextChange() {
+        const text = inputTextElement.value;
+        if (!text.trim()) { // If input is empty or only whitespace
+            clearStatistics();
+            updateTable([]); // Clear table
+            Plotly.purge(wordsPercentElement); // Clear chart
+            localStorage.removeItem('inputText');
+            return;
+        }
+
+        const { processedData, dataArray, totalWords, totalCharacters } = processInputText(text);
+
+        updateStatistics(processedData, totalWords, totalCharacters);
+        updateTable(dataArray);
+        updateChart(dataArray);
 
         if (dataArray.length > 0) {
-          localStorage.setItem('inputText', text)
+          localStorage.setItem('inputText', text);
+        } else {
+          // This case might be redundant if !text.trim() is handled,
+          // but kept for safety if processInputText results in empty dataArray from non-empty input.
+          clearStatistics(); 
         }
-      })
+      }
+
+      function fetchDataForYear(year) {
+        inputTextElement.style.display = 'none';
+        fetch(`./data/${year}.txt`)
+          .then((response) => response.text())
+          .then((text) => {
+            inputTextElement.value = text;
+            inputTextElement.dispatchEvent(new Event('input'));
+          })
+          .catch(error => {
+            console.error(`Error fetching data for year ${year}:`, error);
+            inputTextElement.value = `Failed to load data for ${year}.`; // Show error in textarea
+             inputTextElement.dispatchEvent(new Event('input')); // Process the error message
+          });
+      }
+
+      function handleCustomButtonClick() {
+        localStorage.removeItem('inputText');
+        inputTextElement.value = '';
+        inputTextElement.dispatchEvent(new Event('input')); // Trigger processing to clear UI
+        inputTextElement.style.display = 'block';
+      }
+
+      function handleYearButtonClick(event) {
+        const button = event.target.closest('.chip'); // Ensure we get the button
+        if (!button) return;
+
+        const yearText = button.innerText;
+        if (yearText.includes('Custom')) {
+          handleCustomButtonClick();
+        } else {
+          fetchDataForYear(yearText);
+        }
+      }
+
+      function loadInitialInput() {
+        const storedText = localStorage.getItem('inputText');
+        if (storedText) {
+          inputTextElement.value = storedText;
+          inputTextElement.dispatchEvent(new Event('input'));
+        }
+      }
+
+      function initializePage() {
+        document.querySelectorAll('.year-nav button.chip').forEach((button) => {
+          button.addEventListener('click', handleYearButtonClick);
+        });
+        inputTextElement.addEventListener('input', onInputTextChange);
+        loadInitialInput();
+      }
+
+      // --- Initialize The Page ---
+      initializePage();
     </script>
   </body>
 </html>

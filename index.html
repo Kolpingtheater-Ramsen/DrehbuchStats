@@ -83,6 +83,20 @@
             <div id="wordsPercent" class="chart"></div>
           </article>
         </div>
+
+        <div class="s12">
+          <article class="round">
+            <h5>Occurrences per Actor</h5>
+            <div id="occurrencesChart" class="chart"></div>
+          </article>
+        </div>
+
+        <div class="s12">
+          <article class="round">
+            <h5>Words Spoken per Actor</h5>
+            <div id="wordsBarChart" class="chart"></div>
+          </article>
+        </div>
       </div>
     </main>
 
@@ -94,12 +108,18 @@
       src="https://cdn.plot.ly/plotly-2.27.0.min.js"
       charset="utf-8"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts@4.7.0/dist/apexcharts.min.js"></script>
     <script>
       // --- Constants and Global Variables ---
       const blacklist = ['OFFTEXT', 'ALLE', 'LIED', '[LIED'];
       const inputTextElement = document.querySelector('#inputText');
       const tableElement = document.querySelector('table');
       const wordsPercentElement = document.getElementById('wordsPercent');
+      const occurrencesChartElement = document.getElementById('occurrencesChart'); // New chart element
+      const wordsBarChartElement = document.getElementById('wordsBarChart'); // New chart element for vertical bar
+      let wordsPercentChart; // Global variable for ApexCharts instance
+      let occurrencesBarChart; // Global variable for the new bar chart instance
+      let wordsBarChart; // Global variable for the vertical bar chart instance
       // Elements for statistics
       const totalActorsSpan = document.querySelector('#totalActors span');
       const totalWordsSpan = document.querySelector('#totalWords span');
@@ -197,26 +217,533 @@
       }
 
       function updateChart(dataArray) {
-        const plotData = [
-          {
-            type: 'pie',
-            values: dataArray.map((actor) => actor[2]), // Words
-            labels: dataArray.map((actor) => actor[0]), // Actor names
-            hole: .4,
-            textfont: { color: 'white' },
-            automargin: true,
-          },
-        ];
+        if (wordsPercentChart) {
+          wordsPercentChart.destroy();
+        }
 
-        const plotLayout = {
-          paper_bgcolor: 'rgba(0,0,0,0)',
-          plot_bgcolor: 'rgba(0,0,0,0)',
-          font: { color: 'white' },
-          legend: { font: { color: 'white' } },
-          margin: { l: 40, r: 40, b: 40, t: 40, pad: 0 },
+        const options = {
+          series: dataArray.map((actor) => actor[2]), // Words
+          labels: dataArray.map((actor) => actor[0]), // Actor names
+          chart: {
+            type: 'donut',
+            foreColor: '#FFFFFF', // For dark theme text visibility
+            height: '100%', // Make chart responsive within its container
+          },
+          title: {
+            text: 'Words (%)',
+            align: 'center',
+            style: {
+              color: '#FFFFFF'
+            }
+          },
+          theme: {
+            mode: 'dark',
+            palette: 'palette1' // Or any other modern palette
+          },
+          legend: {
+            position: 'bottom',
+             labels: {
+                colors: '#FFFFFF', // Ensure legend text is white
+            }
+          },
+          tooltip: {
+            y: {
+              formatter: function (val, { seriesIndex, dataPointIndex, w }) {
+                // dataArray should be accessible in this scope or passed appropriately
+                // For now, let's assume dataArray is accessible
+                const actorData = dataArray[dataPointIndex];
+                if (actorData) {
+                    return `${val} words (${actorData[4]}%)`;
+                }
+                return `${val} words`;
+              },
+            },
+          },
+          noData: {
+            text: 'No data to display. Please select a year or enter custom text.',
+            align: 'center',
+            verticalAlign: 'middle',
+            offsetX: 0,
+            offsetY: 0,
+            style: {
+              color: '#FFFFFF',
+              fontSize: '14px',
+            }
+          }
         };
 
-        Plotly.newPlot(wordsPercentElement, plotData, plotLayout, { responsive: true });
+        wordsPercentChart = new ApexCharts(wordsPercentElement, options);
+        wordsPercentChart.render();
+      }
+
+      // --- UI Update Functions ---
+      function updateStatistics(processedData, totalWords, totalCharacters) {
+        const numActors = Object.keys(processedData).length;
+        const avgWordsPerActor = numActors > 0 ? (totalWords / numActors).toFixed(2) : '0';
+
+        totalActorsSpan.textContent = numActors;
+        totalWordsSpan.textContent = totalWords;
+        totalCharactersSpan.textContent = totalCharacters;
+        avgWordsPerActorSpan.textContent = avgWordsPerActor;
+      }
+      
+      function clearStatistics() {
+          totalActorsSpan.textContent = '0';
+          totalWordsSpan.textContent = '0';
+          totalCharactersSpan.textContent = '0';
+          avgWordsPerActorSpan.textContent = '0';
+      }
+
+      function updateTable(dataArray) {
+        tableElement.innerHTML = `
+          <thead>
+            <tr>
+              <th>Actor</th>
+              <th>Occurrences</th>
+              <th>Words</th>
+              <th>Words (%)</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${dataArray
+              .map((actor) => `
+                <tr>
+                  <td>${actor[0]}</td>
+                  <td>${actor[1]}</td>
+                  <td>${actor[2]}</td>
+                  <td>${actor[4]}%</td> 
+                </tr>
+              `)
+              .join('')}
+          </tbody>
+        `;
+      }
+
+      function updateChart(dataArray) {
+        if (wordsPercentChart) {
+          wordsPercentChart.destroy();
+        }
+
+        const options = {
+          series: dataArray.map((actor) => actor[2]), // Words
+          labels: dataArray.map((actor) => actor[0]), // Actor names
+          chart: {
+            type: 'donut',
+            foreColor: '#FFFFFF', // For dark theme text visibility
+            height: '100%', // Make chart responsive within its container
+          },
+          title: {
+            text: 'Words (%)',
+            align: 'center',
+            style: {
+              color: '#FFFFFF'
+            }
+          },
+          theme: {
+            mode: 'dark',
+            palette: 'palette1' // Or any other modern palette
+          },
+          legend: {
+            position: 'bottom',
+             labels: {
+                colors: '#FFFFFF', // Ensure legend text is white
+            }
+          },
+          tooltip: {
+            y: {
+              formatter: function (val, { seriesIndex, dataPointIndex, w }) {
+                // dataArray should be accessible in this scope or passed appropriately
+                // For now, let's assume dataArray is accessible
+                const actorData = dataArray[dataPointIndex];
+                if (actorData) {
+                    return `${val} words (${actorData[4]}%)`;
+                }
+                return `${val} words`;
+              },
+            },
+          },
+          noData: {
+            text: 'No data to display. Please select a year or enter custom text.',
+            align: 'center',
+            verticalAlign: 'middle',
+            offsetX: 0,
+            offsetY: 0,
+            style: {
+              color: '#FFFFFF',
+              fontSize: '14px',
+            }
+          }
+        };
+
+        wordsPercentChart = new ApexCharts(wordsPercentElement, options);
+        wordsPercentChart.render();
+      }
+
+      function updateOccurrencesChart(dataArray) {
+        if (occurrencesBarChart) {
+          occurrencesBarChart.destroy();
+        }
+
+        const options = {
+          series: [{
+            name: 'Occurrences',
+            data: dataArray.map(actor => actor[1])
+          }],
+          chart: {
+            type: 'bar',
+            height: '100%', // Make chart responsive
+            foreColor: '#FFFFFF'
+          },
+          plotOptions: {
+            bar: {
+              horizontal: true,
+              barHeight: '70%', // Adjust as needed
+              distributed: false, // Use a single color or palette
+            }
+          },
+          dataLabels: {
+            enabled: true,
+            style: {
+                colors: ['#333'] // Dark text for light bars, adjust if needed
+            },
+            offsetX: 25 // Adjust to position labels correctly
+          },
+          xaxis: {
+            categories: dataArray.map(actor => actor[0]),
+            labels: {
+              style: {
+                colors: '#FFFFFF',
+              },
+            },
+            title: {
+              text: 'Number of Occurrences',
+              style: {
+                color: '#FFFFFF'
+              }
+            }
+          },
+          yaxis: {
+            labels: {
+              style: {
+                colors: '#FFFFFF',
+              },
+            }
+          },
+          title: {
+            text: 'Occurrences per Actor',
+            align: 'center',
+            style: {
+              color: '#FFFFFF'
+            }
+          },
+          tooltip: {
+            theme: 'dark', // Ensures tooltip itself is dark-themed
+            y: {
+              title: {
+                formatter: function (seriesName) {
+                  return seriesName;
+                }
+              }
+            }
+          },
+          theme: {
+            mode: 'dark',
+            palette: 'palette2' // Example: using a different palette
+          },
+          noData: {
+            text: 'No data to display for occurrences.',
+            align: 'center',
+            verticalAlign: 'middle',
+            offsetX: 0,
+            offsetY: 0,
+            style: {
+              color: '#FFFFFF',
+              fontSize: '14px',
+            }
+          }
+        };
+        occurrencesBarChart = new ApexCharts(occurrencesChartElement, options);
+        occurrencesBarChart.render();
+      }
+
+      // --- UI Update Functions ---
+      function updateStatistics(processedData, totalWords, totalCharacters) {
+        const numActors = Object.keys(processedData).length;
+        const avgWordsPerActor = numActors > 0 ? (totalWords / numActors).toFixed(2) : '0';
+
+        totalActorsSpan.textContent = numActors;
+        totalWordsSpan.textContent = totalWords;
+        totalCharactersSpan.textContent = totalCharacters;
+        avgWordsPerActorSpan.textContent = avgWordsPerActor;
+      }
+      
+      function clearStatistics() {
+          totalActorsSpan.textContent = '0';
+          totalWordsSpan.textContent = '0';
+          totalCharactersSpan.textContent = '0';
+          avgWordsPerActorSpan.textContent = '0';
+      }
+
+      function updateTable(dataArray) {
+        tableElement.innerHTML = `
+          <thead>
+            <tr>
+              <th>Actor</th>
+              <th>Occurrences</th>
+              <th>Words</th>
+              <th>Words (%)</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${dataArray
+              .map((actor) => `
+                <tr>
+                  <td>${actor[0]}</td>
+                  <td>${actor[1]}</td>
+                  <td>${actor[2]}</td>
+                  <td>${actor[4]}%</td> 
+                </tr>
+              `)
+              .join('')}
+          </tbody>
+        `;
+      }
+
+      function updateChart(dataArray) {
+        if (wordsPercentChart) {
+          wordsPercentChart.destroy();
+        }
+
+        const options = {
+          series: dataArray.map((actor) => actor[2]), // Words
+          labels: dataArray.map((actor) => actor[0]), // Actor names
+          chart: {
+            type: 'donut',
+            foreColor: '#FFFFFF', // For dark theme text visibility
+            height: '100%', // Make chart responsive within its container
+          },
+          title: {
+            text: 'Words (%)',
+            align: 'center',
+            style: {
+              color: '#FFFFFF'
+            }
+          },
+          theme: {
+            mode: 'dark',
+            palette: 'palette1' // Or any other modern palette
+          },
+          legend: {
+            position: 'bottom',
+             labels: {
+                colors: '#FFFFFF', // Ensure legend text is white
+            }
+          },
+          tooltip: {
+            y: {
+              formatter: function (val, { seriesIndex, dataPointIndex, w }) {
+                // dataArray should be accessible in this scope or passed appropriately
+                // For now, let's assume dataArray is accessible
+                const actorData = dataArray[dataPointIndex];
+                if (actorData) {
+                    return `${val} words (${actorData[4]}%)`;
+                }
+                return `${val} words`;
+              },
+            },
+          },
+          noData: {
+            text: 'No data to display. Please select a year or enter custom text.',
+            align: 'center',
+            verticalAlign: 'middle',
+            offsetX: 0,
+            offsetY: 0,
+            style: {
+              color: '#FFFFFF',
+              fontSize: '14px',
+            }
+          }
+        };
+
+        wordsPercentChart = new ApexCharts(wordsPercentElement, options);
+        wordsPercentChart.render();
+      }
+
+      function updateOccurrencesChart(dataArray) {
+        if (occurrencesBarChart) {
+          occurrencesBarChart.destroy();
+        }
+
+        const options = {
+          series: [{
+            name: 'Occurrences',
+            data: dataArray.map(actor => actor[1])
+          }],
+          chart: {
+            type: 'bar',
+            height: '100%', // Make chart responsive
+            foreColor: '#FFFFFF'
+          },
+          plotOptions: {
+            bar: {
+              horizontal: true,
+              barHeight: '70%', // Adjust as needed
+              distributed: false, // Use a single color or palette
+            }
+          },
+          dataLabels: {
+            enabled: true,
+            style: {
+                colors: ['#333'] // Dark text for light bars, adjust if needed
+            },
+            offsetX: 25 // Adjust to position labels correctly
+          },
+          xaxis: {
+            categories: dataArray.map(actor => actor[0]),
+            labels: {
+              style: {
+                colors: '#FFFFFF',
+              },
+            },
+            title: {
+              text: 'Number of Occurrences',
+              style: {
+                color: '#FFFFFF'
+              }
+            }
+          },
+          yaxis: {
+            labels: {
+              style: {
+                colors: '#FFFFFF',
+              },
+            }
+          },
+          title: {
+            text: 'Occurrences per Actor',
+            align: 'center',
+            style: {
+              color: '#FFFFFF'
+            }
+          },
+          tooltip: {
+            theme: 'dark', // Ensures tooltip itself is dark-themed
+            y: {
+              title: {
+                formatter: function (seriesName) {
+                  return seriesName;
+                }
+              }
+            }
+          },
+          theme: {
+            mode: 'dark',
+            palette: 'palette2' // Example: using a different palette
+          },
+          noData: {
+            text: 'No data to display for occurrences.',
+            align: 'center',
+            verticalAlign: 'middle',
+            offsetX: 0,
+            offsetY: 0,
+            style: {
+              color: '#FFFFFF',
+              fontSize: '14px',
+            }
+          }
+        };
+        occurrencesBarChart = new ApexCharts(occurrencesChartElement, options);
+        occurrencesBarChart.render();
+      }
+
+      function updateWordsBarChart(dataArray) {
+        if (wordsBarChart) {
+          wordsBarChart.destroy();
+        }
+
+        const options = {
+          series: [{
+            name: 'Words Spoken',
+            data: dataArray.map(actor => actor[2]) // Words spoken is at index 2
+          }],
+          chart: {
+            type: 'bar',
+            height: '100%',
+            foreColor: '#FFFFFF'
+          },
+          plotOptions: {
+            bar: {
+              horizontal: false, // Vertical bar chart
+              columnWidth: '70%', // Adjust as needed
+            }
+          },
+          dataLabels: {
+            enabled: false // Typically not shown on vertical bars if tooltips are active
+          },
+          xaxis: {
+            categories: dataArray.map(actor => actor[0]),
+            labels: {
+              style: {
+                colors: '#FFFFFF',
+              },
+              rotate: -45, // Rotate labels to prevent overlap
+              trim: true,
+            },
+            title: {
+              text: 'Actor',
+               style: {
+                color: '#FFFFFF'
+              }
+            }
+          },
+          yaxis: {
+            labels: {
+              style: {
+                colors: '#FFFFFF',
+              },
+            },
+            title: {
+              text: 'Words Spoken',
+              style: {
+                color: '#FFFFFF'
+              }
+            }
+          },
+          title: {
+            text: 'Words Spoken per Actor',
+            align: 'center',
+            style: {
+              color: '#FFFFFF'
+            }
+          },
+          tooltip: {
+            theme: 'dark',
+            y: {
+              title: {
+                formatter: function (seriesName) {
+                  return seriesName;
+                }
+              }
+            }
+          },
+          theme: {
+            mode: 'dark',
+            palette: 'palette3' // Using a different palette
+          },
+          noData: {
+            text: 'No data to display for words spoken.',
+            align: 'center',
+            verticalAlign: 'middle',
+            offsetX: 0,
+            offsetY: 0,
+            style: {
+              color: '#FFFFFF',
+              fontSize: '14px',
+            }
+          }
+        };
+        wordsBarChart = new ApexCharts(wordsBarChartElement, options);
+        wordsBarChart.render();
       }
 
       // --- Event Handlers and Orchestration ---
@@ -225,7 +752,21 @@
         if (!text.trim()) { // If input is empty or only whitespace
             clearStatistics();
             updateTable([]); // Clear table
-            Plotly.purge(wordsPercentElement); // Clear chart
+            if (wordsPercentChart) {
+                wordsPercentChart.destroy();
+                wordsPercentChart = null; // Ensure it's fully cleared
+            }
+            updateChart([]); // Render the noData state
+            if (occurrencesBarChart) {
+                occurrencesBarChart.destroy();
+                occurrencesBarChart = null;
+            }
+            updateOccurrencesChart([]); // Render the noData state for occurrences chart
+            if (wordsBarChart) {
+                wordsBarChart.destroy();
+                wordsBarChart = null;
+            }
+            updateWordsBarChart([]); // Render the noData state for words bar chart
             localStorage.removeItem('inputText');
             return;
         }
@@ -235,13 +776,18 @@
         updateStatistics(processedData, totalWords, totalCharacters);
         updateTable(dataArray);
         updateChart(dataArray);
+        updateOccurrencesChart(dataArray); // Add this call
+        updateWordsBarChart(dataArray); // Add this call for the new chart
 
         if (dataArray.length > 0) {
           localStorage.setItem('inputText', text);
         } else {
           // This case might be redundant if !text.trim() is handled,
           // but kept for safety if processInputText results in empty dataArray from non-empty input.
-          clearStatistics(); 
+            clearStatistics();
+            updateChart([]); // Also clear chart if processed data is empty
+            updateOccurrencesChart([]);
+            updateWordsBarChart([]);
         }
       }
 
